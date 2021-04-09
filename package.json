@@ -1,0 +1,19 @@
+{
+  "name": "loupaubour_3_02042021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:public/css/style.css"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okamixtape/LoupAubour_3_02042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Okamixtape/LoupAubour_3_02042021/issues"
+  },
+  "homepage": "https://github.com/Okamixtape/LoupAubour_3_02042021#readme"
+}
