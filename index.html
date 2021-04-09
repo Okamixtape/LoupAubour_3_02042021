@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
     <!-- Document HTML -->
     <head>
         <!-- Universal Character Set Transformation Format - 8 bits -->
@@ -22,8 +21,10 @@
 
     <!-- Contenu de la page -->
     <body>
+
         <!-- En-tête de page -->
         <header class="header">
+
             <!-- Logo ou h1 ??? -->
             <img class="header__logo" src="public/img/logo/ohmyfood.png" alt="logo"/>
 
@@ -32,23 +33,55 @@
                 <i class="location__icon fas fa-map-marker-alt"></i>
                 <span class="location__place">Paris, Belleville</span>
             </section>
+
         </header>
         
-
-        <main>
+        <!-- Contenu principal -->
+        <main class="main">
 
             <!-- OMF Location -->
-            <article class="reservez">
+            <article class="main__reservez">
                 <h1 class="reservez__heading">Réservez le menu qui<br/>vous convient</h1>
                 <p class="reservez__byline">Découvrez des restaurants d'exception,<br/>sélectionnés par nos soins.</p>
                 <button class="reservez__btn">Explorer nos restaurants</button>
             </article>
+            
+            <aside class="main__howtouse">
+                <div class="howtouse__container">
+                <h2 class="howtouse__heading">Fonctionnement</h2>
+                    <ol class="howtouse__3steps">
+
+                        <li class="howtouse__step1">
+                            <i class="howtouse__icon"></i>
+                            <span class="howtouse__instructions">Choisissez un restaurant</span>
+                        </li>
+
+                        <li class="howtouse__step2">
+                            <i class="howtouse__icon"></i>
+                            <span class="howtouse__instructions">Composez votre menu</span>
+                        </li>
+
+                        <li class="howtouse__step3">
+                            <i class="howtouse__icon"></i>
+                            <span class="howtouse__instructions">Dégustez au restaurant</span>
+                        </li>
+                    </ol>
+                </div>
+            </aside>
+
+            <section class="main__restaurants">
+                <div class="restaurants__container">
+                    <h2 class="restaurants__heading">Restaurants</h2>
+
+                    <div class="restaurants__cards">
+                        <img class="cards__pic" src="public/img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+                    </div>
+
+                </div>
+
+            </section>
 
 
-
-
-
-        <!-- Contenu principal / 6 Hébergements à Marseille / Flex -->
         </main>
 
 
