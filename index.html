@@ -9,21 +9,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Lien avec fichier style.css -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- Importation icones de bibliothèque fontawesome -->
+        <script src="https://kit.fontawesome.com/57076f09a0.js" crossorigin="anonymous"></script>
         <!-- Description page pour apparaître dans pages résultats moteur de recherche -->
         <meta name="description" content="Ohmyfood est le point de départ de voyages gustatifs inoubliables. 
         Réservez un menu directement sur notre site et devenez, sans attendre, un gourmet d'un nouveau genre.">
         <!-- Titre de la page -->
-        <title>Reservia vous fait voyager ...</title>
+        <title>Ohmyfood, miam miam !</title>
     </head>
+
+    <!-- *** WATCH OUT BEM *** -->
 
     <!-- Contenu de la page -->
     <body>
         <!-- En-tête de page -->
-        <header>
-            <!-- Logo / Top -->
-            <img src="public/img/logo/ohmyfood.png" alt="logo" class="logo"/>
+        <header class="header">
+            <!-- Logo ou h1 ??? -->
+            <img class="header__logo" src="public/img/logo/ohmyfood.png" alt="logo"/>
+
+            <!-- OMF Location -->
+            <section class="header__location">
+                <i class="location__icon fas fa-map-marker-alt"></i>
+                <span class="location__place">Paris, Belleville</span>
+            </section>
         </header>
         
+
+        <main>
+
+            <!-- OMF Location -->
+            <article class="reservez">
+                <h1 class="reservez__heading">Réservez le menu qui<br/>vous convient</h1>
+                <p class="reservez__byline">Découvrez des restaurants d'exception,<br/>sélectionnés par nos soins.</p>
+                <button class="reservez__btn">Explorer nos restaurants</button>
+            </article>
+
+
+
+
+
+        <!-- Contenu principal / 6 Hébergements à Marseille / Flex -->
+        </main>
+
+
         <!-- Trouvez votre hébergement -->
         <section class="recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
