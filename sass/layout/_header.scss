@@ -2,8 +2,19 @@
     &__topcenter {
         display: flex;
         justify-content: center;
-        background: $color-bgheader;
-        height: 10vh;
-        width: 100%;   
+        align-items: center;
+        height: 20vh;
+        width: 100%; 
+        @include box-shadow;
+    }
+    &__logo {
+        height: 6vh;
+    }
+    &__location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $color-bg;
+        height: 5vw;
     }
 }

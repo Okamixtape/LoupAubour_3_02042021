@@ -1,2 +1,24 @@
-*{margin:0;padding:0}.header__topcenter{display:flex;justify-content:center;background:#EAEAEA;height:10vh;width:100%}
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.header__topcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0); }
+.header__logo {
+  height: 6vh; }
+.header__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EAEAEA;
+  height: 5vw; }
+
 /*# sourceMappingURL=style.css.map */
