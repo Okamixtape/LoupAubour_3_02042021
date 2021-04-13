@@ -78,9 +78,20 @@ body {
   .footer__list {
     list-style: none; }
 
+.headertopcenter__arrow {
+  position: relative;
+  right: 27vw; }
+
 .menu__pic {
   height: 40vh;
   width: 100%;
   object-fit: cover; }
+.menu__container {
+  padding: 4vh 3vw; }
+.menu__heading {
+  display: flex; }
+.menu__heartbtn {
+  position: relative;
+  left: 65vw; }
 
 /*# sourceMappingURL=style.css.map */
