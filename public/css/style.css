@@ -62,4 +62,13 @@ body {
   width: 60vw;
   object-fit: cover; }
 
+.footer {
+  background: #353535;
+  color: white;
+  padding: 2vw; }
+  .footer__logo {
+    filter: invert(1); }
+  .footer__list {
+    list-style: none; }
+
 /*# sourceMappingURL=style.css.map */
