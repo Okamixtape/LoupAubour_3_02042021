@@ -1,24 +1,56 @@
-.headertopcenter {
+.headerMenuPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%; 
     &__arrow {
         position: relative;
         right: 27vw;
+    }
+    &__logo {
+        height: 6vh;
     }
 }
 
 .menu {
     &__pic {
-        height: 40vh;
+        height: 50vh;
         width: 100%;
         object-fit: cover;
     }
     &__container {
-        padding: 4vh 3vw;
+        padding: 4vh 5vw;
+        background: $color-bg;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        position: relative;
+        bottom: 8vw;
     }
     &__heading {
         display: flex;
+        align-items: center;
+        font-size: 6vw;
     }
     &__heartbtn {
-        position: relative;
-        left: 65vw;
+        position: absolute;
+        left: 90vw;
+    }
+}
+
+.dishes {
+    &__container {
+        background: white;
+        margin: 2vh 0vw;
+        padding: 2vh 2vw;
+        border-radius: 15px;
+    }
+}
+
+.dishesBottom {
+    display: flex;
+    &__price {
+        position: absolute;
+        left: 87vw;
     }
 }

@@ -3,9 +3,12 @@
   padding: 0; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
-.headertopcenter {
+.menu__heading {
+  font-family: "Shrikhand", sans-serif; }
+
+.headerHomePage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,15 +16,15 @@ body {
   width: 100%;
   background: #ededed;
   box-shadow: 2px 4px 20px #d3d3d3; }
-  .headertopcenter__logo {
+  .headerHomePage__logo {
     height: 6vh; }
-  .headertopcenter__location {
+  .headerHomePage__location {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 5vw;
     padding-bottom: 0.5vh; }
-    .headertopcenter__location span.location__place {
+    .headerHomePage__location span.location__place {
       margin-left: 3vw; }
 
 .reservez {
@@ -78,20 +81,47 @@ body {
   .footer__list {
     list-style: none; }
 
-.headertopcenter__arrow {
-  position: relative;
-  right: 27vw; }
+.headerMenuPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%; }
+  .headerMenuPage__arrow {
+    position: relative;
+    right: 27vw; }
+  .headerMenuPage__logo {
+    height: 6vh; }
 
 .menu__pic {
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   object-fit: cover; }
 .menu__container {
-  padding: 4vh 3vw; }
-.menu__heading {
-  display: flex; }
-.menu__heartbtn {
+  padding: 4vh 5vw;
+  background: #ededed;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   position: relative;
-  left: 65vw; }
+  bottom: 8vw; }
+.menu__heading {
+  display: flex;
+  align-items: center;
+  font-size: 6vw; }
+.menu__heartbtn {
+  position: absolute;
+  left: 90vw; }
+
+.dishes__container {
+  background: white;
+  margin: 2vh 0vw;
+  padding: 2vh 2vw;
+  border-radius: 15px; }
+
+.dishesBottom {
+  display: flex; }
+  .dishesBottom__price {
+    position: absolute;
+    left: 87vw; }
 
 /*# sourceMappingURL=style.css.map */
