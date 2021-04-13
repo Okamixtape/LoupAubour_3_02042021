@@ -10,14 +10,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 10vh;
-  width: 100%; }
+  width: 100%;
+  background: #ededed; }
   .headertopcenter__logo {
     height: 6vh; }
   .headertopcenter__location {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #EAEAEA;
     height: 5vw;
     padding-bottom: 0.5vh; }
     .headertopcenter__location span.location__place {
@@ -26,14 +26,36 @@ body {
 .reservez {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background: #ededed; }
   .reservez__heading {
     padding: 2vw; }
   .reservez__byline {
-    padding-bottom: 1vh; }
+    padding-bottom: 3vh; }
+  .reservez__btn {
+    margin-bottom: 2vh; }
 
 .howtouse__container {
-  padding: 2vh 1vw; }
+  padding: 4vh 2vw; }
+.howtouse__heading {
+  padding-bottom: 2vh; }
+.howtouse__3steps {
+  padding-left: 4vw; }
+
+.restaurants__container {
+  background: #ededed;
+  padding: 1vh 2vw; }
+.restaurants__heading {
+  padding-top: 3vh; }
+.restaurants__cards {
+  background: white;
+  margin: 5vh 0vw;
+  border-radius: 13px;
+  box-shadow: 2px 4px 20px #d3d3d3; }
+.restaurants img {
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  width: 100%; }
 
 .cards__pic {
   height: 30vh;

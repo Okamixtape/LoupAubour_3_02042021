@@ -4,6 +4,7 @@
     align-items: center;
     height: 10vh;
     width: 100%; 
+    background: $color-bg;
     &__logo {
         height: 6vh;
     }
@@ -11,7 +12,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: $color-bg;
         height: 5vw;
         padding-bottom: 0.5vh;
         span.location__place {

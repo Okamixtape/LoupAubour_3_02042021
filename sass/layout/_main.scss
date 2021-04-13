@@ -2,17 +2,49 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: $color-bg;
     &__heading {
         padding: 2vw;
     }
     &__byline {
-        padding-bottom: 1vh;
+        padding-bottom: 3vh;
+    }
+    &__btn {
+        margin-bottom: 2vh;
     }
 }
 
 .howtouse {
     &__container {
-        padding: 2vh 1vw;
+        padding: 4vh 2vw;
+    }
+    &__heading {
+        padding-bottom: 2vh;
+    }
+    &__3steps {
+        padding-left: 4vw;
+    }
+}
+
+
+.restaurants {
+    &__container {
+        background: $color-bg;
+        padding: 1vh 2vw;
+    }
+    &__heading {
+        padding-top: 3vh;
+    }
+    &__cards {
+        background: white;
+        margin: 5vh 0vw;
+        border-radius: 13px;
+        @include box-shadow;
+    }
+    img {
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        width: 100%;
     }
 }
 
