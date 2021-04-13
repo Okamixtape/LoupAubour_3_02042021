@@ -16,13 +16,19 @@
 
 .howtouse {
     &__container {
-        padding: 4vh 2vw;
+        padding: 4vh 3vw;
     }
     &__heading {
         padding-bottom: 2vh;
     }
-    &__3steps {
+    &__allsteps {
         padding-left: 4vw;
+    }
+    &__step {
+        background: $color-bg;
+        margin: 2vh 0vw;
+        padding: 3vh 1.5vw;
+        border-radius: 15px;
     }
 }
 
@@ -30,7 +36,7 @@
 .restaurants {
     &__container {
         background: $color-bg;
-        padding: 1vh 2vw;
+        padding: 1vh 3vw;
     }
     &__heading {
         padding-top: 3vh;
@@ -45,6 +51,7 @@
         border-top-left-radius: 13px;
         border-top-right-radius: 13px;
         width: 100%;
+        height: 30vw;
     }
 }
 
