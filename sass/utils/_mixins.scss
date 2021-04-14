@@ -1,10 +1,22 @@
+@mixin weightlight {
+    font-weight: 100;
+}
+
+@mixin weightmiddle {
+    font-weight: 500;
+}
+
+@mixin weightlarge {
+    font-weight: 800;
+}
+
 @mixin numberstyle {
     position: absolute;
     left: 2vw;
     background: $color-primary;
     border-radius: 50%;
     color: $color-btntxt;
-    padding: 0vh 1vw;
+    padding: 0vh 6px;
 }
 
 @mixin box-shadow {

@@ -7,3 +7,12 @@ body {
         font-family: "Shrikhand", sans-serif;
     }
 }
+
+.dishes {
+    &__heading {
+        @include weightlight;
+    }
+    &__name {
+        @include weightmiddle;
+    }
+}

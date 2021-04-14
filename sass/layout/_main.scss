@@ -66,8 +66,12 @@
     }
 }
 
-.cards__pic {
-    height: 30vh;
-    width: 60vw;
-    object-fit: cover;
+.cards {
+    text-decoration: none;
+    color: black;
+    &__pic {
+        height: 30vh;
+        width: 60vw;
+        object-fit: cover;
+    }
 }
