@@ -47,7 +47,6 @@
         border-radius: 15px;
     }
     &__heading {
-        font-weight: 100;
         font-size: 3vh;
         padding: 2vh 0vw;
     }
@@ -55,6 +54,9 @@
 
 .dishesBottom {
     display: flex;
+    &__description {
+        @include weightlight;
+    }
     &__price {
         position: absolute;
         left: 87vw;
