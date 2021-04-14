@@ -6,7 +6,8 @@
     width: 100%; 
     &__arrow {
         position: relative;
-        right: 27vw;
+        right: 23vw;
+        color: black;
     }
     &__logo {
         height: 6vh;
@@ -45,6 +46,11 @@
         padding: 2vh 2vw;
         border-radius: 15px;
     }
+    &__heading {
+        font-weight: 100;
+        font-size: 3vh;
+        padding: 2vh 0vw;
+    }
 }
 
 .dishesBottom {
@@ -52,5 +58,13 @@
     &__price {
         position: absolute;
         left: 87vw;
+    }
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    &__btn {
+        @include btn;
     }
 }

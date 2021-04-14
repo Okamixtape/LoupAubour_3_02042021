@@ -1,4 +1,28 @@
+@mixin numberstyle {
+    position: absolute;
+    left: 2vw;
+    background: $color-primary;
+    border-radius: 50%;
+    color: $color-btntxt;
+    padding: 0vh 1vw;
+}
+
 @mixin box-shadow {
     box-shadow: 2px 4px 20px $color-bs;
     }
-    
+
+@mixin border($color:$color-secondary) {
+    border: .1rem solid $color;
+}
+
+@mixin btn {
+    margin: 2vh 0vw;
+    padding: 2vh 8vw;
+    @include border;
+    border-radius: 50px;
+    color: $color-btntxt;
+    background: $color-secondary;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 3;
+}

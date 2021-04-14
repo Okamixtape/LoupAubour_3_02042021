@@ -10,7 +10,7 @@
         padding-bottom: 3vh;
     }
     &__btn {
-        margin-bottom: 2vh;
+        @include btn;
     }
 }
 
@@ -22,13 +22,24 @@
         padding-bottom: 2vh;
     }
     &__allsteps {
-        padding-left: 4vw;
+        list-style-type: none;
+        padding: 0vh 2vw;
     }
     &__step {
         background: $color-bg;
         margin: 2vh 0vw;
         padding: 3vh 1.5vw;
         border-radius: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    &__stepNumber {
+        @include numberstyle;
+    }
+    &__icon {
+        position: absolute;
+        left: 11vw;
+        color: $color-icon;
     }
 }
 
