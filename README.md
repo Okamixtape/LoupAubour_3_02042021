@@ -7,7 +7,7 @@
 Transformer une maquette en site 100% mobile (système de réservation de plats en ligne)
 et la dynamiser avec des animations CSS.
 
-Ce site permettra à l'usager de composer son repas (entrées, plats et desserts) à l'avance, pour ensuite le déguster sur place sans attendre.
+Ce site permettra à l'usager de composer son repas (entrées, plats et desserts) à l'avance, pour ensuite le déguster au restaurant sans attendre.
 
 ## Contexte : 
 
@@ -43,7 +43,7 @@ Les maquettes vous sont fournies par la designeuse UX
 - Utilisation conseillée de [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) et/ou [CSS Grid](https://www.w3schools.com/css/css_grid.asp) 
 - Le code devra comprendre les [balises sémantiques](https://ronan-hello.fr/series/html/balises-semantiques-html) et ne doit contenir aucune erreur ni alerte au validateur W3C [HTML](https://validator.w3.org/) et [CSS](https://jigsaw.w3.org/css-validator/)
 - Le site devra être compatible avec les dernières versions de Chrome et Firefox
-- Séparer les fichiers HTML et le CSS et organiser le dossier final
+- BEM / 7-1
 - Code à versionner avec Git pour ensuite déployer la page sur GitHub Pages ou GitLab Pages
 
 ## Coordonnées :
