@@ -1,4 +1,4 @@
-# Reservia
+# Ohmyfood
 
 3e projet du parcours "Développeur Web" d'OpenClassrooms
 
@@ -16,23 +16,25 @@ Vous rejoignez l'équipe de développement pour concevoir le menu de quatre rest
 Les maquettes vous sont fournies par la designeuse UX
 ( 1 X page d'accueil et 4 X page restaurant).
 
-![maquette desktop reservia](images/maquettes/Desktop_1.png)
+![maquette desktop ohmyfood](images/maquettes/Desktop_1.png)
 
 ## Ressources disponibles :
 
 - 5 maquettes (version smartphone) à trouver dans dossier "images"
 - Icônes à exporter depuis [Font Awesome](https://fontawesome.com/)
 - Couleurs de la charte : Primaire #9356DC, Secondaire #FF79DA et Tertiaire #99E2D0
-- Polices à exporter depuis ["Shrikhand"](https://fonts.google.com/specimen/Shrikhand) (Logo et titres) et ["Roboto"](https://fonts.google.com/specimen/Roboto) (Texte)
+- Polices à exporter depuis [Shrikhand](https://fonts.google.com/specimen/Shrikhand) (Logo et titres) et [Roboto](https://fonts.google.com/specimen/Roboto) (Texte)
 
 ## Fonctionnalités : 
 
-- Offrir une expérience de navigation optimale quel que soit l'appareil utilisé **(Desktop, Tablette et Smartphone)**
-- Respecter une taille adaptée d'image pour l'intégration (penser à l'esthétique et au temps de chargement de la page)
-- Possibilité d'insérer du texte dans le champ de saisie de la barre de recherche (le bouton de recherche restera non fonctionnel) 
-- Chaque carte d’hébergement ou d’activité doit être cliquable dans son intégralité (les liens resteront vides)
-- Les filtres ne seront pas fonctionnels mais il doivent changer d’apparence au survol
-- Dans le menu les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page
+- Le site sera développé en priorité en utilisant l’approche mobile-first, mais devra aussi s'adapter aux autres résolutions **(Laptop, Desktop et Tablette)** (mise en page libre)
+- Les frameworks sont proscrits mais l'utilisation de [SASS](https://sass-lang.com/) est conseillé.
+- Le code CSS ne peut pas être appliqué via un attribut de style dans une balise HTML
+- Page d'accueil : 
+
+1/ Affichage de la localisation des restaurants, il sera possible de choisir une localisation pour trouver les établissements proches d'une adresse (ex: Paris, Belleville)
+2/ Chaque carte de restaurant doit être cliquable dans son intégralité et l'utilisateur sera redirigé vers la page du menu
+
 
 ## Cahier des charges : 
 
