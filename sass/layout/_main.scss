@@ -33,6 +33,7 @@
         border-radius: 15px;
         display: flex;
         justify-content: center;
+        @include box-shadow;
     }
     &__stepNumber {
         @include numberStyle;
@@ -78,5 +79,14 @@
         height: 30vh;
         width: 60vw;
         object-fit: cover;
+    }
+    &__caption {
+        padding: 1vh 2vw 1.5vh;
+    }
+    &__heading {
+        padding-bottom: 1vh;
+    }
+    &__location {
+        @include weightlight;
     }
 }

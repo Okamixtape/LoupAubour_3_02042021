@@ -20,7 +20,7 @@ body {
   height: 10vh;
   width: 100%;
   background: #ededed;
-  box-shadow: 2px 4px 20px #d3d3d3; }
+  box-shadow: 0px 5px 10px 2px #e9e9e9; }
   .headerHomePage__logo {
     height: 6vh; }
   .headerHomePage__location {
@@ -66,7 +66,8 @@ body {
   padding: 3vh 1.5vw;
   border-radius: 15px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  box-shadow: 0px 5px 10px 2px #e9e9e9; }
 .howtouse__stepNumber {
   position: absolute;
   left: 89px;
@@ -90,7 +91,7 @@ body {
   background: white;
   margin: 5vh 0vw;
   border-radius: 13px;
-  box-shadow: 2px 4px 20px #d3d3d3; }
+  box-shadow: 0px 5px 10px 2px #e9e9e9; }
 .restaurants img {
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
@@ -104,10 +105,15 @@ body {
     height: 30vh;
     width: 60vw;
     object-fit: cover; }
+  .cards__caption {
+    padding: 1vh 2vw 1.5vh; }
+  .cards__heading {
+    padding-bottom: 1vh; }
+  .cards__location {
+    font-weight: 100; }
 
 .footer {
   background: #353535;
-  color: #f0ecec;
   padding: 2vw; }
   .footer__logo {
     filter: invert(1);
@@ -118,6 +124,9 @@ body {
     margin: 1vh 0; }
   .footer__utensilsIcon, .footer__handsIcon {
     margin-right: 1vw; }
+  .footer a {
+    text-decoration: none;
+    color: #f0ecec; }
 
 .headerMenuPage {
   display: flex;

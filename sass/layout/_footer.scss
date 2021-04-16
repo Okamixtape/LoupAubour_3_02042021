@@ -1,6 +1,5 @@
 .footer {
     background: #353535;
-    color: #f0ecec;
     padding: 2vw;
     &__logo {
         filter: invert(1);
@@ -15,5 +14,9 @@
     &__utensilsIcon,
     &__handsIcon{
         margin-right: 1vw;
+    }
+    a {
+        text-decoration: none;
+        color: #f0ecec;
     }
 }
