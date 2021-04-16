@@ -4,9 +4,16 @@
     padding: 2vw;
     &__logo {
         filter: invert(1);
-        height: 5vh;
+        height: 4vh;
     }
     &__list {
         list-style: none;
+    }
+    &__listitem {
+        margin: 1vh 0;
+    }
+    &__utensilsIcon,
+    &__handsIcon{
+        margin-right: 1vw;
     }
 }
