@@ -34,3 +34,8 @@
     background: linear-gradient(0deg, $color-primary, $color-secondary);
     cursor: pointer;
 }
+
+@mixin bottomBorder {
+    border-bottom: 3px solid $color-tertiary;
+    width: 2.4em;
+}

@@ -1,6 +1,6 @@
 .footer {
     background: #353535;
-    padding: 2vw;
+    padding: 3vw;
     &__logo {
         filter: invert(1);
         height: 4vh;
@@ -9,7 +9,7 @@
         list-style: none;
     }
     &__listitem {
-        margin: 1vh 0;
+        margin: 2vh 0;
     }
     &__utensilsIcon,
     &__handsIcon{

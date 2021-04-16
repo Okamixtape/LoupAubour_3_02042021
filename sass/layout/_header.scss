@@ -5,16 +5,17 @@
     height: 10vh;
     width: 100%; 
     background: $color-bg;
-    @include box-shadow;
     &__logo {
         height: 6vh;
     }
     &__location {
+        background: darken($color-bg, 4%);
         display: flex;
         justify-content: center;
         align-items: center;
         height: 5vw;
         padding-bottom: 0.5vh;
+        box-shadow: inset 0px 5px 5px 2px darken($color-bs, 13%);
         span.location__place {
             margin-left: 3vw;
         }

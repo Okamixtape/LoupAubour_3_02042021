@@ -49,6 +49,7 @@
     &__heading {
         font-size: 3vh;
         padding: 2vh 0vw;
+        @include bottomBorder;
     }
 }
 
