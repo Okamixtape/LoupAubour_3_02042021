@@ -32,8 +32,9 @@ Les maquettes vous sont fournies par la designeuse UX
 - Le code CSS ne peut pas être appliqué via un attribut de style dans une balise HTML
 - Page d'accueil : 
 
-1/ Affichage de la localisation des restaurants, il sera possible de choisir une localisation pour trouver les établissements proches d'une adresse (ex: Paris, Belleville)
-2/ Chaque carte de restaurant doit être cliquable dans son intégralité et l'utilisateur sera redirigé vers la page du menu
+Affichage de la localisation des restaurants, il sera possible de choisir une localisation pour trouver les établissements proches d'une adresse (ex: Paris, Belleville)
+
+Chaque carte de restaurant doit être cliquable dans son intégralité et l'utilisateur sera redirigé vers la page du menu
 
 
 ## Cahier des charges : 
