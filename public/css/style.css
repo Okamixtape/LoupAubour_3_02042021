@@ -155,7 +155,7 @@ body {
 .menu__heading {
   display: flex;
   align-items: center;
-  font-size: 6vw; }
+  font-size: 5vw; }
 .menu__heartbtn {
   position: absolute;
   left: 90vw; }
