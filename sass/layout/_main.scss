@@ -34,22 +34,29 @@
         border-radius: 15px;
         display: flex;
         justify-content: center;
+        align-items: center;
         @include box-shadow;
     }
     &__stepNumber {
         @include numberStyle;
     }
     &__mobileicon {
-        padding: 0 39px 0 30px;
+        position: absolute;
+        left: 25vw;
         opacity: 0.5;
+        font-size: 1.5em;
     }
     &__listicon {
-        padding: 0 36px 0 13px;
+        position: absolute;
+        left: 24.6vw;
         opacity: 0.5;
+        font-size: 1.3em;
     }
     &__storeicon {
-        padding: 0px 34px 0 16px;
+        position: absolute;
+        left: 24.4vw;
         opacity: 0.5;
+        font-size: 1.3em;
     }
 }
 
