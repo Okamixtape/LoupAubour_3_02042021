@@ -26,7 +26,7 @@
 
 @mixin btn {
     font-size: 2.2vw;
-    font-weight: 600;
+    @include weightmiddle;
     margin: 2vh 0vw;
     padding: 2vh 8vw;
     border-radius: 50px;
@@ -34,9 +34,20 @@
     color: $color-btntxt;
     background: linear-gradient(0deg, $color-primary, $color-secondary);
     cursor: pointer;
+    &:hover {
+        background: linear-gradient
+        (0deg,lighten($color-primary, 5%),lighten($color-secondary, 5%));
+    }
 }
 
 @mixin bottomBorder {
     border-bottom: 3px solid $color-tertiary;
     width: 2.4em;
+}
+
+@mixin cardTag {
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 33%);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }

@@ -21,7 +21,7 @@
     }
     &__heading {
         padding-bottom: 2vh;
-        padding-left: 2vw;
+        padding-left: 3vw;
     }
     &__allsteps {
         list-style-type: none;
@@ -99,5 +99,12 @@
     }
     &__location {
         @include weightlight;
+    }
+    &__tag {
+        position: absolute;
+        right: 5%;
+        margin-top: 2%;
+        @include cardTag;
+        @include weightmiddle;
     }
 }
