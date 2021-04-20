@@ -29,13 +29,21 @@
     }
     &__step {
         background: $color-bg;
-        margin: 2vh 0vw;
+        margin: 3vh 0vw;
         padding: 3vh 1.5vw;
         border-radius: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
         @include box-shadow;
+        &:hover {
+			background-color: lighten($color-primary, 30%);
+            box-shadow: 0px 5px 10px 2px darken($color-bs, 20%);
+            i {
+                opacity: 1;
+                color: $color-primary;
+            }
+		}
     }
     &__stepNumber {
         @include numberStyle;
@@ -91,6 +99,11 @@
         width: 60vw;
         object-fit: cover;
     }
+    &__footercontainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__caption {
         padding: 1vh 2vw 1.5vh;
     }
@@ -106,5 +119,11 @@
         margin-top: 2%;
         @include cardTag;
         @include weightmiddle;
+    }
+    &__heartbtn {
+        position: relative;
+        bottom: 0.2em;;
+        margin-right: 1em;
+        font-size: 1.5em;
     }
 }

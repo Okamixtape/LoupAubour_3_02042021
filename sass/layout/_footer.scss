@@ -18,5 +18,8 @@
     a {
         text-decoration: none;
         color: #f0ecec;
+        &:hover {
+			color: $color-primary;
+		}
     }
 }

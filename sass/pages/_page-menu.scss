@@ -5,8 +5,10 @@
     height: 10vh;
     width: 100%; 
     &__arrow {
-        position: relative;
-        right: 23vw;
+        font-size: 1.4em;
+        position: absolute;
+        left: 10vw;
+        top: 19px;
         color: black;
     }
     &__logo {
@@ -41,10 +43,10 @@
 .dishes {
     &__container {
         background: white;
-        margin: 2vh 0vw;
+        margin: 3vh 0vw;
         padding: 2vh 2vw;
         border-radius: 15px;
-        box-shadow: 0px 3px 3px 2px darken($color-bs, 3%);
+        box-shadow: 0px 3px 6px 2px darken($color-bs, 1%);
     }
     &__heading {
         font-size: 3vh;
