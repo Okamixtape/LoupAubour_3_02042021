@@ -82,6 +82,12 @@
         margin: 5vh 0vw;
         border-radius: 13px;
         @include box-shadow;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 400ms;
+        &:hover {
+            transform: scale(1.03);
+        }
     }
     img {
         border-top-left-radius: 13px;
