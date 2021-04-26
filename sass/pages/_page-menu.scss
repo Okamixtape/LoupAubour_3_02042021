@@ -44,25 +44,18 @@
     &__container {
         background: white;
         margin: 3vh 0vw;
-        padding: 2vh 2vw;
+        padding: 1em 1em;
         border-radius: 15px;
         box-shadow: 0px 3px 6px 2px darken($color-bs, 1%);
+        cursor:pointer;
     }
     &__heading {
         font-size: 3vh;
         padding: 2vh 0vw 1.5vh 0vw;
         @include bottomBorder;
     }
-}
-
-.dishesBottom {
-    display: flex;
-    &__description {
+    &__bottomDescription {
         @include weightlight;
-    }
-    &__price {
-        position: absolute;
-        right: 7.5vw;
     }
 }
 

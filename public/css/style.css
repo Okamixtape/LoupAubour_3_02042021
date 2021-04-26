@@ -1,3 +1,40 @@
+@keyframes slide {
+  0% {
+    transform: translateX(60px); }
+  100% {
+    transform: translateX(0); } }
+.dishes__container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 2.4em; }
+  .dishes__container .dishes__bottomPriceCheckbox {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(60px);
+    position: relative;
+    bottom: 1.2em; }
+  .dishes__container:hover .dishes__bottomPriceCheckbox {
+    animation: slide 0.5s ease-in-out forwards; }
+  .dishes__container .checkicon {
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    bottom: 0.2em; }
+  .dishes__container:hover .checkicon {
+    transform: rotate(1turn);
+    transition: 0.8s; }
+  .dishes__container .dishes__bottomCheckbox {
+    position: relative;
+    left: 1.2em;
+    bottom: 2.5em;
+    padding: 33px 19px 21px 19px;
+    background-color: #99E2D0; }
+  .dishes__container:hover .dishes__bottomCheckbox {
+    animation: slide 0.5s ease-in-out forwards; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -218,22 +255,17 @@ body {
 .dishes__container {
   background: white;
   margin: 3vh 0vw;
-  padding: 2vh 2vw;
+  padding: 1em 1em;
   border-radius: 15px;
-  box-shadow: 0px 3px 6px 2px #d5d4d4; }
+  box-shadow: 0px 3px 6px 2px #d5d4d4;
+  cursor: pointer; }
 .dishes__heading {
   font-size: 3vh;
   padding: 2vh 0vw 1.5vh 0vw;
   border-bottom: 3px solid #99E2D0;
   width: 2.4em; }
-
-.dishesBottom {
-  display: flex; }
-  .dishesBottom__description {
-    font-weight: 100; }
-  .dishesBottom__price {
-    position: absolute;
-    right: 7.5vw; }
+.dishes__bottomDescription {
+  font-weight: 100; }
 
 .order {
   display: flex;

@@ -1,0 +1,47 @@
+@keyframes slide {
+    0% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.dishes__container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 2.4em;
+    & .dishes__bottomPriceCheckbox {
+        display: flex;
+        justify-content: flex-end;
+        transform: translateX(60px);
+        position: relative;
+        bottom: 1.2em;
+    }
+    &:hover .dishes__bottomPriceCheckbox {
+        animation: slide 0.5s ease-in-out forwards;
+    }
+    & .checkicon {
+        display: inline-block;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+        bottom: 0.2em;
+    }
+    &:hover .checkicon {
+        transform: rotate(1turn);
+        transition: 0.8s;
+    }
+    & .dishes__bottomCheckbox {
+        position: relative;
+        left: 1.2em;
+        bottom: 2.5em;
+        padding: 33px 19px 21px 19px;
+        background-color: $color-tertiary;
+    }
+    &:hover .dishes__bottomCheckbox {
+        animation: slide 0.5s ease-in-out forwards;
+    }
+}
