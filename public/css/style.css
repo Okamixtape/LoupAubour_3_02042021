@@ -1,3 +1,27 @@
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(1); }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0) scale(1.05); }
+  80%,
+    100% {
+    opacity: 1;
+    transform: scale(1); } }
+.dishes {
+  animation: ease-in-out pop-up 400ms both; }
+  .dishes__heading {
+    animation: ease-in-out pop-up 400ms 200ms both; }
+  .dishes__container {
+    animation: ease-in-out pop-up 400ms 400ms both; }
+    .dishes__container:nth-child(2) {
+      animation-delay: 200ms; }
+    .dishes__container:nth-child(3) {
+      animation-delay: 400ms; }
+    .dishes__container:nth-child(4) {
+      animation-delay: 600ms; }
+
 @keyframes slide {
   0% {
     transform: translateX(60px); }
@@ -15,25 +39,28 @@
     position: relative;
     bottom: 1.2em; }
   .dishes__container:hover .dishes__bottomPriceCheckbox {
-    animation: slide 0.5s ease-in-out forwards; }
+    animation: slide 0.5s ease-in-out both; }
   .dishes__container .checkicon {
     display: inline-block;
-    color: #FFFFFF;
+    color: #FFF;
     font-weight: bold;
     font-size: 20px;
     position: relative;
-    bottom: 0.2em; }
+    bottom: 0.2em;
+    right: 0.05em; }
   .dishes__container:hover .checkicon {
-    transform: rotate(1turn);
-    transition: 0.8s; }
+    transform: rotate(-1turn);
+    transition: 0.8s;
+    transition-duration: 380.36323232964554ms;
+    transition-delay: 194.2940588244631ms; }
   .dishes__container .dishes__bottomCheckbox {
     position: relative;
     left: 1.2em;
     bottom: 2.5em;
-    padding: 33px 19px 21px 19px;
+    padding: 33px 20px 21px 20px;
     background-color: #99E2D0; }
   .dishes__container:hover .dishes__bottomCheckbox {
-    animation: slide 0.5s ease-in-out forwards; }
+    animation: slide 0.5s ease-in-out both; }
 
 * {
   margin: 0;
@@ -286,6 +313,8 @@ body {
   width: 2.4em; }
 .dishes__bottomDescription {
   font-weight: 100; }
+.dishes__bottomPrice {
+  font-weight: 500; }
 
 .order {
   display: flex;

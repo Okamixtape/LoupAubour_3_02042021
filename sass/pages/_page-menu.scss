@@ -74,6 +74,9 @@
     &__bottomDescription {
         @include weightlight;
     }
+    &__bottomPrice {
+        @include weightmiddle;
+    }
 }
 
 .order {
