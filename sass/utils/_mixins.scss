@@ -46,6 +46,10 @@
     }
 }
 
+@mixin gradientcolor {
+    background: linear-gradient(45deg, $color-secondary, $color-primary);
+} 
+
 @mixin bottomBorder {
     border-bottom: 3px solid $color-tertiary;
     width: 2.4em;

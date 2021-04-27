@@ -34,9 +34,26 @@
         align-items: center;
         font-size: 4vw;
     }
-    &__heartbtn {
-        position: absolute;
-        left: 90vw;
+    &__emptyheartbtn {
+        position: relative;
+        left: 10em;
+        &:hover {
+            opacity: 0;
+        }
+    }
+    &__fullheartbtn {
+        position: relative;
+        left: 8.8em;
+        opacity: 0;
+        @include gradientcolor;
+        cursor: pointer;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover {
+            transition: 400ms;
+            opacity: 1;
+        }
     }
 }
 

@@ -192,18 +192,18 @@ body {
     font-weight: 500; }
   .cards__emptyheartbtn {
     position: relative;
-    bottom: 0.2em;
-    margin-right: 1em;
     font-size: 1.83em; }
     .cards__emptyheartbtn:hover {
       opacity: 0; }
   .cards__fullheartbtn {
     opacity: 0;
-    font-size: 2em;
+    font-size: 1.85em;
     position: relative;
-    right: 1.99em;
-    bottom: 0.15em;
-    color: #9356DC; }
+    right: 1.14em;
+    background: linear-gradient(45deg, #FF79DA, #9356DC);
+    cursor: pointer;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
     .cards__fullheartbtn:hover {
       transition: 400ms;
       opacity: 1; }
@@ -255,9 +255,22 @@ body {
   display: flex;
   align-items: center;
   font-size: 4vw; }
-.menu__heartbtn {
-  position: absolute;
-  left: 90vw; }
+.menu__emptyheartbtn {
+  position: relative;
+  left: 10em; }
+  .menu__emptyheartbtn:hover {
+    opacity: 0; }
+.menu__fullheartbtn {
+  position: relative;
+  left: 8.8em;
+  opacity: 0;
+  background: linear-gradient(45deg, #FF79DA, #9356DC);
+  cursor: pointer;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  .menu__fullheartbtn:hover {
+    transition: 400ms;
+    opacity: 1; }
 
 .dishes__container {
   background: white;
