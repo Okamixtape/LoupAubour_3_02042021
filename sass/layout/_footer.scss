@@ -1,9 +1,16 @@
 .footer {
     background: #353535;
     padding: 5vw;
+    @media screen and (min-width: 1000px) {
+        padding: 3vw;
+        text-align: center;
+    }
     &__logo {
         filter: invert(1);
         height: 1.3em;
+        @media screen and (min-width: 1000px) {
+            margin-bottom: 1em;
+        }
     }
     &__list {
         list-style: none;

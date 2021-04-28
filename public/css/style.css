@@ -293,9 +293,16 @@ body {
 .footer {
   background: #353535;
   padding: 5vw; }
+  @media screen and (min-width: 1000px) {
+    .footer {
+      padding: 3vw;
+      text-align: center; } }
   .footer__logo {
     filter: invert(1);
     height: 1.3em; }
+    @media screen and (min-width: 1000px) {
+      .footer__logo {
+        margin-bottom: 1em; } }
   .footer__list {
     list-style: none; }
   .footer__listitem {
