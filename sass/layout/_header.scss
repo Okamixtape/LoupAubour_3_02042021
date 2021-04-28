@@ -4,19 +4,19 @@
     align-items: center;
     height: 10vh;
     width: 100%; 
-    background: $color-bg;
     &__logo {
-        height: 6vh;
+        height: 4.5vh;
     }
     &__location {
         background: darken($color-bg, 4%);
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 5vw;
+        height: 6.5vw;
         padding-top: 0.4em;
         padding-bottom: 0.3em;
         box-shadow: inset 0px 5px 5px 0px darken($color-bs, 5%);
+        font-size: 1.4em;
         span.location__place {
             margin-left: 3vw;
         }

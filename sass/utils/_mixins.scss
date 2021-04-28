@@ -12,12 +12,12 @@
 
 @mixin numberStyle {
     position: absolute;
-    left: 88px;
+    left: 92px;
     background: $color-primary;
     border-radius: 50%;
     color: $color-btntxt;
-    font-size: 0.9em;
-    padding: 3.4px 8px 3px 8px;
+    font-size: 1.3em;
+    padding: 3.6px 10px 3.2px 10px;
     @media screen and (min-width: 1000px) {
         position: relative;
         left: -4.3vw;
