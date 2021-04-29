@@ -17,10 +17,10 @@
 .dishes {
     animation: ease-in-out pop-up $animation-ms both;
     &__heading {
-        animation: ease-in-out pop-up ($animation-ms) $animation-delay * 2 both;
+        animation: ease-in-out pop-up ($animation-ms) both;
     }
     &__container {
-        animation: ease-in-out pop-up ($animation-ms) $animation-delay * 4 both;
+        animation: ease-in-out pop-up ($animation-ms) both;
         &:nth-child(2) {
             animation-delay: $animation-delay * 2;
         }
@@ -64,7 +64,7 @@
         font-size: 20px;
         position: relative;
         bottom: 0.2em;
-        right: 0.05em;
+        right: 0.1em;
     }
     &:hover .checkicon {
         transform: rotate(-1turn);
@@ -83,3 +83,19 @@
         animation: slide 0.5s ease-in-out both;
     }
 }
+
+@keyframes bump-animation {
+	0% {
+		transform: scale(1);
+	}
+	20% {
+		transform: scale(1.10);
+	}
+	40% {
+		transform: scale(1.20);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+

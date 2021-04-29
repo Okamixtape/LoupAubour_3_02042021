@@ -8,7 +8,7 @@
         font-size: 1.4em;
         position: absolute;
         left: 9vw;
-        top: 22px;
+        margin-top: -0.5em;
         color: black;
     }
     &__logo {
@@ -56,10 +56,13 @@
         cursor: pointer;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: $color-tertiary;
 
         &:hover {
             transition: 400ms;
             opacity: 1;
+            animation: bump-animation 400ms ease-in-out forwards;
         }
     }
 }

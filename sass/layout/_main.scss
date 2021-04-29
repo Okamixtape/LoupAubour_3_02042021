@@ -175,23 +175,25 @@
     }
     &__emptyheartbtn {
         position: relative;
-        font-size: 1.83em;
-        &:hover {
-            opacity: 0;
-        }
+        font-size: 1.82em;
+        top: 0.007em;
     }
     &__fullheartbtn {
         opacity: 0;
-        font-size: 1.85em;
+        font-size: 1.82em;
         position: relative;
-        right: 1.13em;
+        right: 1.122em;
+        top: 0.007em;
         @include gradientcolor;
         cursor: pointer;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        &:hover{
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $color-tertiary;
+        &:hover {
             transition: 400ms;
             opacity: 1;
+            animation: bump-animation 400ms ease-in-out forwards;
         }
     }
 }

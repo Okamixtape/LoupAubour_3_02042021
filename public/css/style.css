@@ -12,9 +12,9 @@
 .dishes {
   animation: ease-in-out pop-up 400ms both; }
   .dishes__heading {
-    animation: ease-in-out pop-up 400ms 200ms both; }
+    animation: ease-in-out pop-up 400ms both; }
   .dishes__container {
-    animation: ease-in-out pop-up 400ms 400ms both; }
+    animation: ease-in-out pop-up 400ms both; }
     .dishes__container:nth-child(2) {
       animation-delay: 200ms; }
     .dishes__container:nth-child(3) {
@@ -47,7 +47,7 @@
     font-size: 20px;
     position: relative;
     bottom: 0.2em;
-    right: 0.05em; }
+    right: 0.1em; }
   .dishes__container:hover .checkicon {
     transform: rotate(-1turn);
     transition: 0.8s;
@@ -62,6 +62,15 @@
   .dishes__container:hover .dishes__bottomCheckbox {
     animation: slide 0.5s ease-in-out both; }
 
+@keyframes bump-animation {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(1.1); }
+  40% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
 * {
   margin: 0;
   padding: 0; }
@@ -274,21 +283,24 @@ body {
         font-size: 1.6vw; } }
   .cards__emptyheartbtn {
     position: relative;
-    font-size: 1.83em; }
-    .cards__emptyheartbtn:hover {
-      opacity: 0; }
+    font-size: 1.82em;
+    top: 0.007em; }
   .cards__fullheartbtn {
     opacity: 0;
-    font-size: 1.85em;
+    font-size: 1.82em;
     position: relative;
-    right: 1.13em;
+    right: 1.122em;
+    top: 0.007em;
     background: linear-gradient(45deg, #FF79DA, #9356DC);
     cursor: pointer;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #99E2D0; }
     .cards__fullheartbtn:hover {
       transition: 400ms;
-      opacity: 1; }
+      opacity: 1;
+      animation: bump-animation 400ms ease-in-out forwards; }
 
 .footer {
   background: #353535;
@@ -325,7 +337,7 @@ body {
     font-size: 1.4em;
     position: absolute;
     left: 9vw;
-    top: 22px;
+    margin-top: -0.5em;
     color: black; }
   .headerMenuPage__logo {
     height: 4.5vh; }
@@ -361,10 +373,13 @@ body {
   background: linear-gradient(45deg, #FF79DA, #9356DC);
   cursor: pointer;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #99E2D0; }
   .menu__fullheartbtn:hover {
     transition: 400ms;
-    opacity: 1; }
+    opacity: 1;
+    animation: bump-animation 400ms ease-in-out forwards; }
 
 .dishes__container {
   background: white;
