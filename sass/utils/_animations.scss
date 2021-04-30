@@ -22,13 +22,13 @@
     &__container {
         animation: ease-in-out pop-up ($animation-ms) both;
         &:nth-child(2) {
-            animation-delay: $animation-delay * 2;
+            animation-delay: $animation-delay * 2.5;
         }
         &:nth-child(3) {
-            animation-delay: $animation-delay * 4;
+            animation-delay: $animation-delay * 5;
         }
         &:nth-child(4) {
-            animation-delay: $animation-delay * 6;
+            animation-delay: $animation-delay * 7.5;
         }
     }
 }
@@ -99,3 +99,65 @@
 	}
 }
 
+@keyframes dissapear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -100;
+    }
+}
+
+
+@keyframes spinning-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate (180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingSpinner {
+    animation: dissapear $animation-ms * 6 both;
+    animation-delay: $animation-delay * 10;
+    background-color: $color-checkicon;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+    &__container {
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        border: 25px solid $color-tertiary;
+        border-radius: 50%;
+        position: relative;
+        vertical-align: middle;
+        overflow: hidden;
+    }
+    &__inner {
+            animation: linear spinning-animation $animation-ms * 5 infinite;
+            background: linear-gradient(180deg, $color-primary, $color-secondary);
+            transform-origin: 100% 100%;
+            border-radius: 50%;
+            height: 50%;
+            width: 50%;
+    }
+}
