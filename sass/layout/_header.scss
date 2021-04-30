@@ -17,8 +17,16 @@
         padding-bottom: 0.3em;
         box-shadow: inset 0px 5px 5px 0px darken($color-bs, 5%);
         font-size: 1.4em;
-        span.location__place {
-            margin-left: 3vw;
+        input.location__place {
+            margin-left: 1.4em;
+            height: 2em;
+            padding: 0.5em 0.5em 0.5em 1em;
+            max-width: 10em;
+            border-radius: 13px;
+            border: none;
+            &::placeholder {
+                color:black;
+            }
         }
     }
 }
