@@ -207,6 +207,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   box-shadow: 0px 5px 10px 2px #d8d7d7; }
   @media screen and (min-width: 1000px) {
     .howtouse__step {
