@@ -22,6 +22,11 @@
         position: relative;
         left: -4.3vw;
     }
+    @media screen and (max-width: 580px) {
+        font-size: 1em;
+        padding: 3.6px 8px 3.2px 8px;
+        left: 14px;
+    }
 }
 
 @mixin box-shadow {
@@ -36,6 +41,7 @@
     padding: 2vh 4vw;
     border-radius: 50px;
     border: none;
+    outline: none;
     color: $color-btntxt;
     background: linear-gradient(0deg, $color-primary, $color-secondary);
     cursor: pointer;

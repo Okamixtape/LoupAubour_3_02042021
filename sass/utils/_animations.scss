@@ -154,7 +154,7 @@
     }
     &__inner {
             animation: linear spinning-animation $animation-ms * 5 infinite;
-            background: linear-gradient(180deg, $color-primary, $color-secondary);
+            background: linear-gradient(150deg, $color-primary, $color-secondary);
             transform-origin: 100% 100%;
             border-radius: 50%;
             height: 50%;
