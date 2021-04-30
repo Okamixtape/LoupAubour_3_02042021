@@ -83,6 +83,7 @@
     }
     &__bottomDescription {
         @include weightlight;
+        text-overflow: ellipsis;
     }
     &__bottomPrice {
         @include weightmiddle;
