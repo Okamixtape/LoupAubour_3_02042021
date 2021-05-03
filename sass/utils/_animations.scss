@@ -45,7 +45,7 @@
 .dishes__container {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
     max-height: 2.4em;
     & .dishes__bottomPriceCheckbox {
         display: flex;
@@ -81,6 +81,12 @@
     }
     &:hover .dishes__bottomCheckbox {
         animation: slide 0.5s ease-in-out both;
+    }
+    &:hover .dishes__name {
+        width: 71%;
+    }
+    &:hover .dishes__bottomDescription {
+        width: 70%;
     }
 }
 

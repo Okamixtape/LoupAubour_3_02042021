@@ -48,12 +48,14 @@
         font-size: 1.5em;
         @media screen and (min-width: 1400px) {
             font-size: 1.2em;
+            padding-left: 12vw;
         }
     }
     &__btn {
         font-size: 1.3em;
         @media screen and (min-width: 1400px) {
-            padding-right: 12vw;
+            margin-right: 17vw;
+            font-size: 0.8em;
         }
     }
     &__emptyheartbtn {
@@ -98,15 +100,35 @@
         border-radius: 15px;
         box-shadow: 0px 3px 6px 2px darken($color-bs, 1%);
         cursor:pointer;
+        overflow-y: hidden;
     }
     &__heading {
-        font-size: 3vh;
+        font-size: 2em;;
         padding: 2vh 0vw 1.5vh 0vw;
         @include bottomBorder;
+        @media screen and (max-width: 550px) {
+            font-size: 1.7em;
+        }
+        @media screen and (min-width: 1400px) {
+            margin-left: 0.5vw;
+        }
+    }
+    &__name {
+        display: inline-block;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 87%;
+    }
+    &__bottom {
+        height: 1em;
     }
     &__bottomDescription {
         @include weightlight;
+        overflow-x: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 87%;
     }
     &__bottomPrice {
         @include weightmiddle;
@@ -121,6 +143,6 @@
     }
     @media screen and (min-width: 1400px) {
         position: relative;
-        right: 33vw;
+        right: 32.5vw;
     }
 }
