@@ -37,9 +37,11 @@
     justify-content: flex-end;
     transform: translateX(60px);
     position: relative;
-    bottom: 1.2em; }
+    bottom: 1.2em;
+    transition: all 0.5s ease-in-out; }
   .dishes__container:hover .dishes__bottomPriceCheckbox {
-    animation: slide 0.5s ease-in-out both; }
+    /*animation: slide 0.5s ease-in-out both;*/
+    transform: translateX(0px); }
   .dishes__container .checkicon {
     display: inline-block;
     color: #FFF;
@@ -58,9 +60,11 @@
     left: 1.2em;
     bottom: 2.5em;
     padding: 33px 20px 21px 20px;
-    background-color: #99E2D0; }
+    background-color: #99E2D0;
+    transition: transform 0.5s ease-in-out; }
   .dishes__container:hover .dishes__bottomCheckbox {
-    animation: slide 0.5s ease-in-out both; }
+    /*animation: slide 0.5s ease-in-out both;*/
+    transform: translateX(0px); }
   .dishes__container:hover .dishes__name {
     width: 71%; }
   .dishes__container:hover .dishes__bottomDescription {

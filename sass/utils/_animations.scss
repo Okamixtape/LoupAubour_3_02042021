@@ -53,9 +53,11 @@
         transform: translateX(60px);
         position: relative;
         bottom: 1.2em;
+        transition: all 0.5s ease-in-out;
     }
     &:hover .dishes__bottomPriceCheckbox {
-        animation: slide 0.5s ease-in-out both;
+        /*animation: slide 0.5s ease-in-out both;*/
+        transform: translateX(0px);
     }
     & .checkicon {
         display: inline-block;
@@ -78,9 +80,11 @@
         bottom: 2.5em;
         padding: 33px 20px 21px 20px;
         background-color: $color-tertiary;
+        transition: transform 0.5s ease-in-out;
     }
     &:hover .dishes__bottomCheckbox {
-        animation: slide 0.5s ease-in-out both;
+        /*animation: slide 0.5s ease-in-out both;*/
+        transform: translateX(0px);
     }
     &:hover .dishes__name {
         width: 71%;
