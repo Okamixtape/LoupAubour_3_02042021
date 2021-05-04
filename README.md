@@ -16,18 +16,18 @@ Vous rejoignez l'équipe de développement pour concevoir le menu de quatre rest
 Les maquettes vous sont fournies par la designeuse UX
 ( 1 X page d'accueil et 4 X page restaurant).
 
-![maquette desktop ohmyfood](images/maquettes/Desktop_1.png)
+![maquette mobile ohmyfood](img/maquettes/Accueil.png)
 
 ## Ressources disponibles :
 
-- 5 maquettes (version smartphone) à trouver dans dossier "images"
+- 5 maquettes (version smartphone / 1 X Homepage et 4 X Pages menu) à trouver dans dossier "img"
 - Icônes à exporter depuis [Font Awesome](https://fontawesome.com/)
 - Couleurs de la charte : Primaire #9356DC, Secondaire #FF79DA et Tertiaire #99E2D0
 - Polices à exporter depuis [Shrikhand](https://fonts.google.com/specimen/Shrikhand) (Logo et titres) et [Roboto](https://fonts.google.com/specimen/Roboto) (Texte)
 
 ## Fonctionnalités : 
 
-- Le site sera développé en priorité en utilisant l’approche mobile-first, mais devra aussi s'adapter aux autres résolutions **(Laptop, Desktop et Tablette)** (mise en page libre)
+- Le site sera développé en priorité avec l’approche mobile-first, et devra aussi s'adapter aux autres résolutions **(Laptop, Desktop et Tablette)** (mise en page libre)
 - Les frameworks sont proscrits mais l'utilisation de [SASS](https://sass-lang.com/) est conseillé.
 - Le code CSS ne peut pas être appliqué via un attribut de style dans une balise HTML
 - Page d'accueil : 
