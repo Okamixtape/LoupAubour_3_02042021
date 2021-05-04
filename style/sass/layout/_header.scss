@@ -1,4 +1,4 @@
-.headerHomePage {
+.headerAllPages {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,6 @@
         padding-top: 0.4em;
         padding-bottom: 0.3em;
         box-shadow: inset 0px 5px 5px 0px darken($color-bs, 5%);
-        font-size: 1.4em;
         input {
             margin-left: 1.4em;
             height: 2em;
@@ -24,7 +23,6 @@
             max-width: 10em;
             border-radius: 13px;
             border: none;
-            font-size: 0.8em;
             outline: none;
             &::placeholder {
                 color:black;

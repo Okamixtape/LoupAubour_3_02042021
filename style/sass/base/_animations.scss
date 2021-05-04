@@ -1,117 +1,15 @@
-// -------------------- //
-//   /* ANIMATIONS */   //
-// -------------------- //
+// ----------------------  //
+//    /* ANIMATIONS */     //
+// Dedicated to animations //
+// ----------------------  //
 
 
-@keyframes pop-up {
-    0% {
-        opacity: 0;
-        transform: translateY(100%) scale(1);
-    }
-    50% {
-        opacity: 0.5;
-        transform: translateY(0) scale(1.05);
-    }
-    80%,
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+/* --- HOMEPAGE --- */ 
 
-.dishes {
-    animation: ease-in-out pop-up $animation-ms both;
-    &__heading {
-        animation: ease-in-out pop-up ($animation-ms) both;
-    }
-    &__container {
-        animation: ease-in-out pop-up ($animation-ms) both;
-        &:nth-child(2) {
-            animation-delay: $animation-delay * 2.5;
-        }
-        &:nth-child(3) {
-            animation-delay: $animation-delay * 5;
-        }
-        &:nth-child(4) {
-            animation-delay: $animation-delay * 7.5;
-        }
-    }
-}
 
-.dishes__container {
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    max-height: 2.4em;
-    & .dishes__bottomPriceCheckbox {
-        display: flex;
-        justify-content: flex-end;
-        transform: translateX(60px);
-        position: relative;
-        bottom: 1.2em;
-        transition: all 0.5s ease-in-out;
-    }
-    &:hover .dishes__bottomPriceCheckbox {
-        /*animation: slide 0.5s ease-in-out both;*/
-        transform: translateX(0px);
-    }
-    & .checkicon {
-        display: inline-block;
-        color: $color-checkicon;
-        position: relative;
-        bottom: 0.2em;
-        right: 0.1em;
-    }
-    &:hover .checkicon {
-        transform: rotate(-1turn);
-        transition: 0.8s;
-        transition-duration: 380.36323232964554ms;
-        transition-delay: 194.2940588244631ms;
-    }
-    & .dishes__bottomCheckbox {
-        position: relative;
-        left: 1.2em;
-        bottom: 2.5em;
-        padding: 33px 20px 21px 20px;
-        background-color: $color-tertiary;
-        transition: transform 0.5s ease-in-out;
-    }
-    &:hover .dishes__bottomCheckbox {
-        /*animation: slide 0.5s ease-in-out both;*/
-        transform: translateX(0px);
-    }
-    &:hover .dishes__name {
-        width: 82%;
-        @media screen and (max-width: 295px) {
-            width: 75%;
-        }
-    }
-    &:hover .dishes__bottomDescription {
-        width: 70%;
-        @media screen and (max-width: 399px) {
-            width: 62%;
-        }
-        @media screen and (max-width: 256px) {
-            width: 52%;
-        }
-        
-    }
-}
+/* Loading spinner's animations */
 
-@keyframes bump-animation {
-	0% {
-		transform: scale(1);
-	}
-	20% {
-		transform: scale(1.10);
-	}
-	40% {
-		transform: scale(1.20);
-	}
-	100% {
-		transform: scale(1);
-	}
-}
+/* 1ST / Fading-out animation */
 
 @keyframes dissapear {
     0% {
@@ -123,6 +21,7 @@
     }
 }
 
+/* 2ND / Spinning-out animation */
 
 @keyframes spinning-animation {
     0% {
@@ -137,6 +36,10 @@
         transform: rotate(360deg);
     }
 }
+
+/* Fading-out and Spinning-out animations applied to loading spinner */
+
+/* Position fixed and relative applied for layout purpose */
 
 .loadingSpinner {
     animation: dissapear $animation-ms * 6 both;
@@ -173,5 +76,193 @@
             border-radius: 50%;
             height: 50%;
             width: 50%;
+    }
+}
+
+/* Heart icon's bounce animation when hovered */
+
+@keyframes bounce-animation {
+	0% {
+		transform: scale(1);
+	}
+	20% {
+		transform: scale(1.10);
+	}
+	40% {
+		transform: scale(1.20);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Bounce-animation applied to cards heart icon */
+
+.cards {
+    &__emptyheartbtn {
+        position: relative;
+        font-size: 1.82em;
+        top: 0.007em;
+        right: -0.5em,
+    }
+    &__fullheartbtn {
+        opacity: 0;
+        font-size: 1.82em;
+        position: relative;
+        right: 0.622em;
+        top: 0.007em;
+        @include gradientcolor;
+        cursor: pointer;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $color-tertiary;
+        &:hover {
+            transition: 400ms;
+            opacity: 1;
+            animation: bounce-animation 400ms ease-in-out forwards;
+        }
+    }
+}
+
+
+/* --- MENU PAGE --- */
+
+
+/* Gradual display of menu and dishes */
+
+@keyframes pop-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(0) scale(1.05);
+    }
+    80%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pop-up keyframe applied to menu and dishes */
+
+.dishes {
+    animation: ease-in-out pop-up $animation-ms both;
+    &__heading {
+        animation: ease-in-out pop-up ($animation-ms) both;
+    }
+    &__container {
+        animation: ease-in-out pop-up ($animation-ms) both;
+        &:nth-child(2) {
+            animation-delay: $animation-delay * 2.5;
+        }
+        &:nth-child(3) {
+            animation-delay: $animation-delay * 5;
+        }
+        &:nth-child(4) {
+            animation-delay: $animation-delay * 7.5;
+        }
+    }
+}
+
+/* TranslateX applied to price and checkbox / Rotation (-360°) applied to checkicon */
+
+/* Display flex applied for layout purpose */
+
+.dishes__container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    max-height: 2.4em;
+    & .dishes__bottomPriceCheckbox {
+        display: flex;
+        justify-content: flex-end;
+        transform: translateX(60px);
+        position: relative;
+        bottom: 1.2em;
+        transition: all 0.5s ease-in-out;
+    }
+    &:hover .dishes__bottomPriceCheckbox {
+        transform: translateX(0px);
+    }
+    & .checkicon {
+        display: inline-block;
+        color: $color-checkicon;
+        position: relative;
+        bottom: 0.2em;
+        right: 0.1em;
+    }
+    &:hover .checkicon {
+        transform: rotate(-1turn);
+        transition: 0.8s;
+        transition-duration: 380.36323232964554ms;
+        transition-delay: 194.2940588244631ms;
+    }
+    & .dishes__bottomCheckbox {
+        position: relative;
+        left: 1.2em;
+        bottom: 2.5em;
+        padding: 33px 20px 21px 20px;
+        background-color: $color-tertiary;
+        transition: transform 0.5s ease-in-out;
+    }
+    &:hover .dishes__bottomCheckbox {
+        transform: translateX(0px);
+    }
+
+    /* Ellipsis effect functioning responsively */
+
+    &:hover .dishes__name {
+        width: 82%;
+        @media screen and (max-width: 295px) {
+            width: 75%;
+        }
+    }
+    &:hover .dishes__bottomDescription {
+        width: 70%;
+        @media screen and (max-width: 399px) {
+            width: 62%;
+        }
+        @media screen and (max-width: 256px) {
+            width: 52%;
+        }
+        
+    } 
+}
+
+/* Bounce-animation applied to menu heart icon */
+
+.menu {
+    &__emptyheartbtn {
+        position: relative;
+        left: 4.5em;
+        @media screen and (min-width: 550px) {
+            left: 3em;
+        }
+        &:hover {
+            opacity: 0;
+        }
+    }
+    &__fullheartbtn {
+        position: relative;
+        left: 3.3em;
+        opacity: 0;
+        @include gradientcolor;
+        cursor: pointer;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: $color-tertiary;
+        @media screen and (min-width: 550px) {
+            left: 1.8em;
+        }
+        &:hover {
+            transition: 400ms;
+            opacity: 1;
+            animation: bounce-animation 400ms ease-in-out forwards;
+        }
     }
 }

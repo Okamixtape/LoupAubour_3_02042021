@@ -1,18 +1,18 @@
-.headerMenuPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8vh;
-    width: 100%; 
+//  --------------------  //
+//    /* PAGES MENU */    //
+// Dedicated to pages CSS //
+//  --------------------  //
+
+
+.headerAllPages {
+    &__location {
+        display: none;
+    }
     &__arrow {
-        font-size: 1.4em;
         position: absolute;
         left: 9vw;
         margin-top: -0.5em;
         color: black;
-    }
-    &__logo {
-        height: 4.5vh;
     }
 }
 
@@ -41,52 +41,18 @@
     &__heading {
         display: flex;
         align-items: center;
-        font-size: 4vw;
         margin-bottom: 1em;
     }
     &__title {
-        font-size: 1.5em;
         @media screen and (min-width: 1400px) {
-            font-size: 1.2em;
             padding-left: 12vw;
         }
     }
     &__btn {
-        font-size: 1.3em;
         @media screen and (min-width: 1400px) {
             margin-right: 17vw;
-            font-size: 0.8em;
         }
-    }
-    &__emptyheartbtn {
-        position: relative;
-        left: 4.5em;
-        @media screen and (min-width: 550px) {
-            left: 3em;
-        }
-        &:hover {
-            opacity: 0;
-        }
-    }
-    &__fullheartbtn {
-        position: relative;
-        left: 3.3em;
-        opacity: 0;
-        @include gradientcolor;
-        cursor: pointer;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 3px;
-        -webkit-text-stroke-color: $color-tertiary;
-        @media screen and (min-width: 550px) {
-            left: 1.8em;
-        }
-        &:hover {
-            transition: 400ms;
-            opacity: 1;
-            animation: bump-animation 400ms ease-in-out forwards;
-        }
-    }
+    } 
 }
 
 .dishes {
@@ -103,12 +69,8 @@
         overflow-y: hidden;
     }
     &__heading {
-        font-size: 2em;;
         padding: 2vh 0vw 1.5vh 0vw;
         @include bottomBorder;
-        @media screen and (max-width: 550px) {
-            font-size: 1.7em;
-        }
         @media screen and (min-width: 1400px) {
             margin-left: 0.5vw;
         }
@@ -124,7 +86,6 @@
         height: 1em;
     }
     &__bottomDescription {
-        @include weightlight;
         overflow-x: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -132,9 +93,6 @@
         @media screen and (max-width: 256px) {
             width: 80%;
         }
-    }
-    &__bottomPrice {
-        @include weightmiddle;
     }
 }
 
