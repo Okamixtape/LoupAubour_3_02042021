@@ -66,7 +66,7 @@
     /*animation: slide 0.5s ease-in-out both;*/
     transform: translateX(0px); }
   .dishes__container:hover .dishes__name {
-    width: 71%; }
+    width: 82%; }
   .dishes__container:hover .dishes__bottomDescription {
     width: 70%; }
 
@@ -552,7 +552,7 @@ body {
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 87%; }
+  width: 93%; }
 .dishes__bottom {
   height: 1em; }
 .dishes__bottomDescription {
