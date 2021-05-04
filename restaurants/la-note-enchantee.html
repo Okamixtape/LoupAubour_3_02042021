@@ -7,7 +7,7 @@
         <!-- Définiton du viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Lien avec fichier style.css -->
-        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="../style/css/style.css">
         <!-- Importation des Polices Shrikhand et Roboto -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
@@ -28,19 +28,19 @@
         <header class="header">
             <div class="headerMenuPage">
                 <!-- Ancre pour revenir à la page d'acceuil -->
-                <a href="./index.html"><i class="fas fa-arrow-left headerMenuPage__arrow"></i></a>
+                <a href="../index.html"><i class="fas fa-arrow-left headerMenuPage__arrow"></i></a>
                 <!-- Logo ou h1 ??? -->
-                <img class="headerMenuPage__logo" src="public/img/logo/ohmyfood.png" alt="logo"/>
+                <img class="headerMenuPage__logo" src="../img/logo/ohmyfood.png" alt="logo"/>
             </div>
         </header>
 
         <!-- Contenu principal -->
         <main class="main">
             <article class="menu">
-                <img class="menu__pic" src="public/img/restaurants/le_delice_des_sens.jpg" alt="La palette du goût">
+                <img class="menu__pic" src="../img/restaurants/la_note_enchantee.jpg" alt="La palette du goût">
                 <div class="menu__container">
                     <section class="menu__heading">
-                        <h1 class="menu__title">Le délice des sens</h1>
+                        <h1 class="menu__title">La note enchantée</h1>
                         <div class="menu__btn">
                             <i class="far fa-heart menu__emptyheartbtn"></i>
                             <i class="fas fa-heart menu__fullheartbtn"></i>
@@ -51,9 +51,9 @@
                         <h2 class="dishes__heading">ENTRÉES</h2>
 
                         <div class="dishes__container">
-                            <h3 class="dishes__name">Tartare de thon</h3>
+                            <h3 class="dishes__name">Raviole de foie gras</h3>
                             <div class="dishes__bottom">
-                                <p class="dishes__bottomDescription">Assaisonné au yuzu</p>
+                                <p class="dishes__bottomDescription">Accompagnés de leur crème à la truffe</p>
                                 <div class="dishes__bottomPriceCheckbox">
                                     <p class="dishes__bottomPrice">25€</p>
                                     <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
@@ -62,9 +62,9 @@
                         </div>
 
                         <div class="dishes__container">
-                            <h3 class="dishes__name">Bouchée de homard croustillant</h3>
+                            <h3 class="dishes__name">Caviar osciètre</h3>
                             <div class="dishes__bottom">
-                                <p class="dishes__bottomDescription">Et sa farandole de petits légumes</p>
+                                <p class="dishes__bottomDescription">Sur blini à la farine de blé noir</p>
                                 <div class="dishes__bottomPriceCheckbox">
                                     <p class="dishes__bottomPrice">35€</p>
                                     <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
@@ -73,11 +73,22 @@
                         </div>
 
                         <div class="dishes__container">
-                            <h3 class="dishes__name">Velouté de cèpes</h3>
+                            <h3 class="dishes__name">Homard et espuma de chou-fleur</h3>
                             <div class="dishes__bottom">
-                                <p class="dishes__bottomDescription">Aux truffes</p>
+                                <p class="dishes__bottomDescription">Mariné aux zestes d'orange</p>
                                 <div class="dishes__bottomPriceCheckbox">
                                     <p class="dishes__bottomPrice">20€</p>
+                                    <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dishes__container">
+                            <h3 class="dishes__name">Foie gras de canard cuit entier</h3>
+                            <div class="dishes__bottom">
+                                <p class="dishes__bottomDescription">Confiture de figue et pain toasté</p>
+                                <div class="dishes__bottomPriceCheckbox">
+                                    <p class="dishes__bottomPrice">35€</p>
                                     <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
                                 </div>
                             </div>
@@ -88,9 +99,9 @@
                         <h2 class="dishes__heading">PLATS</h2>
 
                         <div class="dishes__container">
-                            <h3 class="dishes__name">Poulet rôti aux herbes de provence</h3>
+                            <h3 class="dishes__name">Noix de coquilles Saint-Jacques</h3>
                             <div class="dishes__bottom">
-                                <p class="dishes__bottomDescription">Et sa crème de truffe</p>
+                                <p class="dishes__bottomDescription">Sur lit de purée de céleri-rave</p>
                                 <div class="dishes__bottomPriceCheckbox">
                                     <p class="dishes__bottomPrice">40€</p>
                                     <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
@@ -99,9 +110,9 @@
                         </div>
 
                         <div class="dishes__container">
-                            <h3 class="dishes__name">Langouste rôtie</h3>
+                            <h3 class="dishes__name">Langoustine poêlée</h3>
                             <div class="dishes__bottom">
-                                <p class="dishes__bottomDescription">Et ses légumes de saison</p>
+                                <p class="dishes__bottomDescription">Purée de patate douce</p>
                                 <div class="dishes__bottomPriceCheckbox">
                                     <p class="dishes__bottomPrice">35€</p>
                                     <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
@@ -110,9 +121,9 @@
                         </div>
 
                         <div class="dishes__container">
-                            <h3 class="dishes__name">Côte de boeuf angus</h3>
+                            <h3 class="dishes__name">Mijoté de queue de boeuf</h3>
                             <div class="dishes__bottom">
-                                <p class="dishes__bottomDescription">Et sa purée de panais</p>
+                                <p class="dishes__bottomDescription">Et riz sauvage aux zestes de citron</p>
                                 <div class="dishes__bottomPriceCheckbox">
                                     <p class="dishes__bottomPrice">44€</p>
                                     <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
@@ -125,9 +136,9 @@
                         <h2 class="dishes__heading">DESSERTS</h2>
 
                         <div class="dishes__container">
-                            <h3 class="dishes__name">Farandole de desserts</h3>
+                            <h3 class="dishes__name">Macaron noisette et chocolat</h3>
                             <div class="dishes__bottom">
-                                <p class="dishes__bottomDescription">Du chef</p>
+                                <p class="dishes__bottomDescription">Glace au caramel brun et sel de Guérande</p>
                                 <div class="dishes__bottomPriceCheckbox">
                                     <p class="dishes__bottomPrice">18€</p>
                                     <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
@@ -136,9 +147,9 @@
                         </div>
 
                         <div class="dishes__container">
-                            <h3 class="dishes__name">Crème brulée</h3>
+                            <h3 class="dishes__name">Baba au rhum revisité</h3>
                             <div class="dishes__bottom">
-                                <p class="dishes__bottomDescription">Revisitée</p>
+                                <p class="dishes__bottomDescription">Avec son coulis de citron</p>
                                 <div class="dishes__bottomPriceCheckbox">
                                     <p class="dishes__bottomPrice">22€</p>
                                     <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
@@ -147,9 +158,9 @@
                         </div>
 
                         <div class="dishes__container">
-                            <h3 class="dishes__name">Tiramisu</h3>
+                            <h3 class="dishes__name">Tarte au citron meringuée</h3>
                             <div class="dishes__bottom">
-                                <p class="dishes__bottomDescription">À la noisette</p>
+                                <p class="dishes__bottomDescription">Destructurée</p>
                                 <div class="dishes__bottomPriceCheckbox">
                                     <p class="dishes__bottomPrice">23€</p>
                                     <span class="dishes__bottomCheckbox"><i class="fas checkicon fa-check-circle"></i></span>
@@ -166,7 +177,7 @@
         </main>
         
         <footer class="footer">
-            <img class="footer__logo" src="public/img/logo/ohmyfood.png" alt="logo"/>
+            <img class="footer__logo" src="../img/logo/ohmyfood.png" alt="logo"/>
             <ul class="footer__list">
                 <li class="footer__listitem">
                     <a href="">

@@ -2,10 +2,10 @@
   "name": "loupaubour_3_02042021",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "sass": "sass --watch sass/main.scss:public/css/style.css",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    "sass": "sass --watch style/sass/main.scss:style/css/style.css",
+    "prefix": "postcss ./style/css/style.css --use autoprefixer -d ./style/css/prefixed/"
     },
   "repository": {
     "type": "git",
