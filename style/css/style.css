@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.menu__heading {
+  font-family: "Shrikhand", sans-serif; }
+
+.dishes__heading {
+  font-weight: 100; }
+.dishes__name {
+  font-weight: 500; }
+.dishes__container .checkicon {
+  font-weight: bold;
+  font-size: 22px; }
+
 @keyframes pop-up {
   0% {
     opacity: 0;
@@ -22,11 +40,6 @@
     .dishes__container:nth-child(4) {
       animation-delay: 750ms; }
 
-@keyframes slide {
-  0% {
-    transform: translateX(60px); }
-  100% {
-    transform: translateX(0); } }
 .dishes__container {
   display: flex;
   flex-direction: column;
@@ -45,8 +58,6 @@
   .dishes__container .checkicon {
     display: inline-block;
     color: #FFF;
-    font-weight: bold;
-    font-size: 20px;
     position: relative;
     bottom: 0.2em;
     right: 0.1em; }
@@ -67,8 +78,17 @@
     transform: translateX(0px); }
   .dishes__container:hover .dishes__name {
     width: 82%; }
+    @media screen and (max-width: 295px) {
+      .dishes__container:hover .dishes__name {
+        width: 75%; } }
   .dishes__container:hover .dishes__bottomDescription {
     width: 70%; }
+    @media screen and (max-width: 399px) {
+      .dishes__container:hover .dishes__bottomDescription {
+        width: 62%; } }
+    @media screen and (max-width: 256px) {
+      .dishes__container:hover .dishes__bottomDescription {
+        width: 52%; } }
 
 @keyframes bump-animation {
   0% {
@@ -89,7 +109,7 @@
   0% {
     transform: rotate(0deg); }
   50% {
-    transform: rotate 180deg; }
+    transform: rotate(180deg); }
   100% {
     transform: rotate(360deg); } }
 .loadingSpinner {
@@ -125,21 +145,6 @@
     border-radius: 50%;
     height: 50%;
     width: 50%; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: "Roboto", sans-serif; }
-
-.menu__heading {
-  font-family: "Shrikhand", sans-serif; }
-
-.dishes__heading {
-  font-weight: 100; }
-.dishes__name {
-  font-weight: 500; }
 
 .headerHomePage {
   display: flex;
@@ -561,6 +566,9 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 87%; }
+  @media screen and (max-width: 256px) {
+    .dishes__bottomDescription {
+      width: 80%; } }
 .dishes__bottomPrice {
   font-weight: 500; }
 

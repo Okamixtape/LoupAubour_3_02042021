@@ -1,3 +1,8 @@
+// -------------------- //
+//   /* ANIMATIONS */   //
+// -------------------- //
+
+
 @keyframes pop-up {
     0% {
         opacity: 0;
@@ -33,15 +38,6 @@
     }
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(60px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
 .dishes__container {
     display: flex;
     flex-direction: column;
@@ -62,8 +58,6 @@
     & .checkicon {
         display: inline-block;
         color: $color-checkicon;
-        font-weight: bold;
-        font-size: 20px;
         position: relative;
         bottom: 0.2em;
         right: 0.1em;
@@ -88,9 +82,19 @@
     }
     &:hover .dishes__name {
         width: 82%;
+        @media screen and (max-width: 295px) {
+            width: 75%;
+        }
     }
     &:hover .dishes__bottomDescription {
         width: 70%;
+        @media screen and (max-width: 399px) {
+            width: 62%;
+        }
+        @media screen and (max-width: 256px) {
+            width: 52%;
+        }
+        
     }
 }
 
@@ -126,7 +130,7 @@
     }
 
     50% {
-        transform: rotate (180deg);
+        transform: rotate(180deg);
     }
 
     100% {

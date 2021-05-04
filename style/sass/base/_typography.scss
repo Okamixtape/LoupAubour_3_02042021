@@ -15,4 +15,10 @@ body {
     &__name {
         @include weightmiddle;
     }
+    &__container {
+        & .checkicon {
+            font-weight: bold;
+            font-size: 22px;
+        }
+    }
 }

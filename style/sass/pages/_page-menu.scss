@@ -129,6 +129,9 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         width: 87%;
+        @media screen and (max-width: 256px) {
+            width: 80%;
+        }
     }
     &__bottomPrice {
         @include weightmiddle;
