@@ -14,7 +14,7 @@ Ce site permettra à l'usager de composer son repas (entrées, plats et desserts
 Vous rejoignez l'équipe de développement pour concevoir le menu de quatre restaurants.
 
 Les maquettes vous sont fournies par la designeuse UX
-( 1 X page d'accueil et 4 X page restaurant).
+(Exemple ci-dessous : page d'accueil)
 
 ![maquette mobile ohmyfood](img/maquettes/Accueil.png)
 
