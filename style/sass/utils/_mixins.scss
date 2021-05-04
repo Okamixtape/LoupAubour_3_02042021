@@ -1,37 +1,14 @@
-@mixin weightlight {
-    font-weight: 100;
-}
+// -----------------------  //
+//      /* MIXINS */        //
+//   Dedicated to mixins    //
+// -----------------------  //
 
-@mixin weightmiddle {
-    font-weight: 500;
-}
 
-@mixin weightlarge {
-    font-weight: 800;
-}
 
-@mixin numberStyle {
-    position: absolute;
-    left: 92px;
-    background: $color-primary;
-    border-radius: 50%;
-    color: $color-btntxt;
-    font-size: 1.3em;
-    padding: 3.6px 10px 3.2px 10px;
-    @media screen and (min-width: 1000px) {
-        position: relative;
-        left: -4.3vw;
-    }
-    @media screen and (max-width: 580px) {
-        font-size: 1em;
-        padding: 3.6px 8px 3.2px 8px;
-        left: 14px;
-    }
-}
+/* --- COMPONENT'S MIXINS --- */ 
 
-@mixin box-shadow {
-    box-shadow: 0px 5px 10px 2px $color-bs;
-    }
+
+/* Button's style used on Homepage and Menu pages */ 
 
 @mixin btn {
     z-index: 0;
@@ -56,18 +33,70 @@
     }
 }
 
-@mixin gradientcolor {
-    background: linear-gradient(45deg, $color-secondary, $color-primary);
-} 
+/* Number's style used for the "How to use" 3 steps / Homepage */ 
 
-@mixin bottomBorder {
-    border-bottom: 3px solid $color-tertiary;
-    width: 2.4em;
+@mixin numberStyle {
+    position: absolute;
+    left: 92px;
+    background: $color-primary;
+    border-radius: 50%;
+    color: $color-btntxt;
+    font-size: 1.3em;
+    padding: 3.6px 10px 3.2px 10px;
+    @media screen and (min-width: 1000px) {
+        position: relative;
+        left: -4.3vw;
+    }
+    @media screen and (max-width: 580px) {
+        font-size: 1em;
+        padding: 3.6px 8px 3.2px 8px;
+        left: 14px;
+    }
 }
+
+/* Card's tag / Homepage */
 
 @mixin cardTag {
     background-color: $color-tertiary;
     color: darken($color-tertiary, 33%);
     padding: 0.5rem 1rem;
     border-radius: 5px;
+}
+
+
+
+/* --- BASIC MIXINS --- */ 
+
+
+/* Change font-weight */ 
+
+@mixin weightlight {
+    font-weight: 100;
+}
+
+@mixin weightmiddle {
+    font-weight: 500;
+}
+
+@mixin weightlarge {
+    font-weight: 800;
+}
+
+/* Apply box-shadow */ 
+
+@mixin box-shadow {
+    box-shadow: 0px 5px 10px 2px $color-bs;
+    }
+
+/* Apply gradient color (pick deg and several colors) */
+
+@mixin gradientcolor {
+    background: linear-gradient(45deg, $color-secondary, $color-primary);
+} 
+
+/* Underline */
+
+@mixin bottomBorder {
+    border-bottom: 3px solid $color-tertiary;
+    width: 2.4em;
 }

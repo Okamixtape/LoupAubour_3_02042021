@@ -1,3 +1,10 @@
+// ------------------------  //
+//      /* HEADER */         //
+// Dedicated to header style //
+// ------------------------  //
+
+/* --- SAME HEADER FOR ALL PAGES --- */
+
 .headerAllPages {
     display: flex;
     justify-content: center;
@@ -28,5 +35,9 @@
                 color:black;
             }
         }
+    }
+    /* Searchbar not displayed on menu page*/
+    &__menulocation {
+        display: none;
     }
 }

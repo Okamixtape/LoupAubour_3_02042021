@@ -1,4 +1,21 @@
 @charset "UTF-8";
+/* --- COLOR VARIABLES --- */
+/* Main colors */
+/* Button colors */
+/* Icon colors */
+/* Background / Boxshadow colors */
+/* --- ANIMATION VARIABLES --- */
+/* Animation duration */
+/* Animation delay */
+/* --- COMPONENT'S MIXINS --- */
+/* Button's style used on Homepage and Menu pages */
+/* Number's style used for the "How to use" 3 steps / Homepage */
+/* Card's tag / Homepage */
+/* --- BASIC MIXINS --- */
+/* Change font-weight */
+/* Apply box-shadow */
+/* Apply gradient color (pick deg and several colors) */
+/* Underline */
 * {
   margin: 0;
   padding: 0; }
@@ -286,12 +303,14 @@ body {
     opacity: 1;
     animation: bounce-animation 400ms ease-in-out forwards; }
 
+/* --- SAME HEADER FOR ALL PAGES --- */
 .headerAllPages {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
-  width: 100%; }
+  width: 100%;
+  /* Searchbar not displayed on menu page*/ }
   .headerAllPages__logo {
     height: 4.5vh; }
   .headerAllPages__location {
@@ -313,7 +332,10 @@ body {
       outline: none; }
       .headerAllPages__location input::placeholder {
         color: black; }
+  .headerAllPages__menulocation {
+    display: none; }
 
+/* --- SAME FOOTER FOR ALL PAGES --- */
 .footer {
   background: #353535;
   padding: 5vw; }
@@ -546,8 +568,6 @@ body {
         margin-left: 36%;
         padding: 0.7vh 1vw; } }
 
-.headerAllPages__location {
-  display: none; }
 .headerAllPages__arrow {
   position: absolute;
   left: 9vw;

@@ -1,5 +1,12 @@
+// ------------------------  //
+//      /* FOOTER */         //
+// Dedicated to footer style //
+// ------------------------  //
+
+/* --- SAME FOOTER FOR ALL PAGES --- */
+
 .footer {
-    background: #353535;
+    background: darken($color-bg, 75%);
     padding: 5vw;
     @media screen and (min-width: 1000px) {
         padding: 3vw;
