@@ -104,7 +104,7 @@ body {
         font-size: 4vw;
     }
     &__title {
-        font-size: 1.5em;
+        font-size: 1.6em;
         @media screen and (min-width: 1400px) {
             font-size: 1.2em;
         }
@@ -122,7 +122,7 @@ body {
         font-size: 2em;
         @include weightlight;
         @media screen and (max-width: 550px) {
-            font-size: 1.7em;
+            font-size: 1.4em;
         }
     }
     &__name {

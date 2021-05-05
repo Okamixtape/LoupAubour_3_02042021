@@ -22,9 +22,9 @@
 
     <!-- *** WATCH OUT BEM *** -->
 
-    <!-- Contenu de la page -->
+    <!-- Contenu global de la page -->
     <body>
-
+        <!-- Loading Spinner -->
         <div class="loadingSpinner">
             <div class="loadingSpinner__container">
                 <div class="loadingSpinner__inner"></div>
@@ -37,7 +37,7 @@
                 <!-- Logo ou h1 ??? -->
                 <img class="headerAllPages__logo" src="img/logo/ohmyfood.png" alt="logo"/>
             </div>
-                <!-- OMF Location -->
+            <!-- OMF Location -->
             <div class="headerAllPages__location">
                 <i class="location__icon fas fa-map-marker-alt"></i>
                 <input class="location__place" aria-label="Trouvez votre restaurant" placeholder="Paris, Belleville" type="text" />
@@ -46,13 +46,14 @@
 
         <!-- Contenu principal -->
         <main class="main">
-            <!-- OMF Location -->
+            <!-- Courte présentation  -->
             <article class="reservez">
                 <h1 class="reservez__heading">Réservez le menu qui vous convient</h1>
                 <p class="reservez__byline">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button class="reservez__btn">Explorer nos restaurants</button>
             </article>
             
+            <!-- Étapes fonctionnement -->
             <aside class="howtouse">
                 <div class="howtouse__container">
                 <h2 class="howtouse__heading">Fonctionnement</h2>
@@ -79,78 +80,88 @@
                 </div>
             </aside>
 
+            <!-- Liste des restaurants disponibles -->
             <section class="restaurants">
                 <div class="restaurants__container">
                     <h2 class="restaurants__heading">Restaurants</h2>
 
+                    <!-- Affichage restaurants -->
                     <div class="restaurants__display">
+                        <!-- Carte restaurant -->
                         <div class="restaurants__cards">
-                            <a class="cards" href="./restaurants/la-palette-du-gout.html">
                             <figure>
+                                <a class="cards" href="./restaurants/la-palette-du-gout.html">
                                 <div class="cards__tag">Nouveau</div>
-                                <img class="cards__pic" src="img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+                                <img class="cards__pic" src="img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût"></a>
                                 <div class="cards__footercontainer">
-                                    <figcaption class="cards__caption">
-                                        <h3 class="cards__heading">La palette du goût</h3>
-                                        <p class="cards__location">Ménilmontant</p>
-                                    </figcaption> </a>
+                                    <!-- Bouton "j'aime" -->
                                     <div class="cards__btn">
                                         <i class="far fa-heart cards__emptyheartbtn"></i>
                                         <i class="fas fa-heart cards__fullheartbtn"></i>
                                     </div>
                                 </div>
+                                <figcaption class="cards__caption">
+                                    <h3 class="cards__heading">La palette du goût</h3>
+                                    <p class="cards__location">Ménilmontant</p>
+                                </figcaption>
                             </figure>
                         </div>
 
+                        <!-- Carte restaurant -->
                         <div class="restaurants__cards">
-                            <a class="cards" href="./restaurants/la-note-enchantee.html">
                             <figure>
+                                <a class="cards" href="./restaurants/la-note-enchantee.html">
                                 <div class="cards__tag">Nouveau</div>
-                                <img class="cards__pic" src="img/restaurants/la_note_enchantee.jpg" alt="La palette du goût">
+                                <img class="cards__pic" src="img/restaurants/la_note_enchantee.jpg" alt="La palette du goût"></a>
                                 <div class="cards__footercontainer">
-                                    <figcaption class="cards__caption">
-                                        <h3 class="cards__heading">La note enchantée</h3>
-                                        <p class="cards__location">Charonne</p>
-                                    </figcaption> </a>
+                                    <!-- Bouton "j'aime" -->
                                     <div class="cards__btn">
                                         <i class="far fa-heart cards__emptyheartbtn"></i>
                                         <i class="fas fa-heart cards__fullheartbtn"></i>
                                     </div>
                                 </div>
+                                <figcaption class="cards__caption">
+                                    <h3 class="cards__heading">La note enchantée</h3>
+                                    <p class="cards__location">Charonne</p>
+                                </figcaption>
                             </figure>
                         </div>
 
+                        <!-- Carte restaurant -->
                         <div class="restaurants__cards">
-                            <a class="cards" href="./restaurants/a-la-francaise.html">
                             <figure>
-                                <img class="cards__pic" src="img/restaurants/a_la_francaise.jpg" alt="La palette du goût">
+                                <a class="cards" href="./restaurants/a-la-francaise.html">
+                                <img class="cards__pic" src="img/restaurants/a_la_francaise.jpg" alt="La palette du goût"> </a>
                                 <div class="cards__footercontainer">
-                                    <figcaption class="cards__caption">
-                                        <h3 class="cards__heading">À la française</h3>
-                                        <p class="cards__location">Cité Rouge</p>
-                                    </figcaption> </a>
+                                    <!-- Bouton "j'aime" -->
                                     <div class="cards__btn">
                                         <i class="far fa-heart cards__emptyheartbtn"></i>
                                         <i class="fas fa-heart cards__fullheartbtn"></i>
                                     </div>
                                 </div>
+                                <figcaption class="cards__caption">
+                                    <h3 class="cards__heading">À la française</h3>
+                                    <p class="cards__location">Cité Rouge</p>
+                                </figcaption>
                             </figure>
                         </div>
 
+                        <!-- Carte restaurant -->
                         <div class="restaurants__cards">
-                            <a class="cards" href="./restaurants/le-delice-des-sens.html">
                             <figure>
-                                <img class="cards__pic" src="img/restaurants/le_delice_des_sens.jpg" alt="La palette du goût">
+                                <a class="cards" href="./restaurants/le-delice-des-sens.html">
+                                <img class="cards__pic" src="img/restaurants/le_delice_des_sens.jpg" alt="La palette du goût"></a>
                                 <div class="cards__footercontainer">
-                                    <figcaption class="cards__caption">
-                                        <h3 class="cards__heading">Le délice des sens</h3>
-                                        <p class="cards__location">Folie-Méricourt</p>
-                                    </figcaption> </a>
+                                    <!-- Bouton "j'aime" -->
                                     <div class="cards__btn">
                                         <i class="far fa-heart cards__emptyheartbtn"></i>
                                         <i class="fas fa-heart cards__fullheartbtn"></i>
                                     </div>
                                 </div>
+                                <figcaption class="cards__caption">
+                                    <h3 class="cards__heading">Le délice des sens</h3>
+                                    <p class="cards__location">Folie-Méricourt</p>
+                                </figcaption>
                             </figure>
                         </div>
                     </div>
@@ -158,6 +169,7 @@
             </section>
         </main>
 
+        <!-- Pied de page -->
         <footer class="footer">
             <img class="footer__logo" src="img/logo/ohmyfood.png" alt="logo"/>
             <ul class="footer__list">

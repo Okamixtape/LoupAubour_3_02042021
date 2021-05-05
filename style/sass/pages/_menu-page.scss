@@ -18,6 +18,9 @@
         max-height: 40vw;
         width: 100%;
         object-fit: cover;
+        @media screen and (max-width: 550px) {
+            max-height: 55vw;
+        }
     }
     &__container {
         padding: 4vh 5vw;
