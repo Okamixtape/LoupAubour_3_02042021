@@ -539,7 +539,8 @@ body {
   height: 40vw; }
   @media screen and (min-width: 1000px) {
     .restaurants img {
-      height: 22vw; } }
+      height: 22vw;
+      width: 47.5vw; } }
 
 .cards {
   text-decoration: none;
@@ -572,7 +573,7 @@ body {
       .cards__tag {
         right: unset;
         margin-top: 1.2vw;
-        margin-left: 36%;
+        margin-left: 38%;
         padding: 0.7vh 1vw; } }
 
 .headerAllPages__arrow {
