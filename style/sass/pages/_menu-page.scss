@@ -34,7 +34,8 @@
         @media screen and (min-width: 1400px) {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            /* justify-content: space-around; */
+            justify-content: center;
             padding: 4vh 1vw;
         }
     }
@@ -42,10 +43,8 @@
         display: flex;
         align-items: center;
         margin-bottom: 1em;
-    }
-    &__title {
         @media screen and (min-width: 1400px) {
-            padding-left: 12vw;
+            padding: 0vh 8vw 0vh 8vw;
         }
     }
     &__btn {
@@ -58,6 +57,7 @@
 .dishes {
     @media screen and (min-width: 1400px) {
         width: 30vw;
+        padding: 0vh 1vw 0vh 1vw;
     }
     &__container {
         background: white;
