@@ -330,6 +330,9 @@ body {
   height: 10vh;
   width: 100%;
   /* Searchbar not displayed on menu page*/ }
+  @media screen and (min-width: 1500px) {
+    .headerAllPages {
+      height: 120px; } }
   .headerAllPages__logo {
     height: 4.5vh; }
   .headerAllPages__location {
@@ -362,6 +365,9 @@ body {
     .footer {
       padding: 3vw;
       text-align: center; } }
+  @media screen and (min-width: 1500px) {
+    .footer {
+      padding: 45px; } }
   .footer__logo {
     filter: invert(1);
     height: 1.3em; }
@@ -398,10 +404,19 @@ body {
   text-align: center;
   background: #f4f4f4;
   padding: 2em 1em; }
+  @media screen and (min-width: 1500px) {
+    .reservez {
+      font-size: 1.5em; } }
   .reservez__heading {
     padding: 2vw; }
+    @media screen and (min-width: 1500px) {
+      .reservez__heading {
+        padding: 30px; } }
   .reservez__byline {
     padding-bottom: 3vh; }
+    @media screen and (min-width: 1500px) {
+      .reservez__byline {
+        padding-bottom: 35.31px; } }
   .reservez__btn {
     z-index: 0;
     font-size: 1.2em;
@@ -425,12 +440,18 @@ body {
 
 .howtouse__container {
   padding: 4vw 0 3vw 0; }
+  @media screen and (min-width: 1500px) {
+    .howtouse__container {
+      padding: 60px 0 45px 0; } }
 .howtouse__heading {
   padding-bottom: 2vh;
   padding-left: 5vw; }
   @media screen and (min-width: 1000px) {
     .howtouse__heading {
       padding-left: 2vw; } }
+  @media screen and (min-width: 1500px) {
+    .howtouse__heading {
+      font-size: 2em; } }
 .howtouse__allsteps {
   list-style-type: none;
   padding: 0vh 100px; }
@@ -445,6 +466,9 @@ body {
   @media screen and (min-width: 1300px) {
     .howtouse__allsteps {
       justify-content: space-around; } }
+  @media screen and (min-width: 1500px) {
+    .howtouse__allsteps {
+      padding: 0vh 70px; } }
 .howtouse__step {
   background: #f4f4f4;
   margin: 3vh 1vw;
@@ -458,6 +482,9 @@ body {
   @media screen and (min-width: 1000px) {
     .howtouse__step {
       padding: 3vh 2vw 3vh 3vw; } }
+  @media screen and (min-width: 1500px) {
+    .howtouse__step {
+      font-size: 1.5em; } }
   .howtouse__step:hover {
     background-color: #e4d5f6;
     box-shadow: 0px 5px 10px 2px #a6a3a3; }
@@ -472,6 +499,9 @@ body {
   color: #f8f5f5;
   font-size: 1.3em;
   padding: 3.6px 10px 3.2px 10px; }
+  @media screen and (min-width: 1500px) {
+    .howtouse__stepNumber {
+      padding: 3.6px 13px 3.2px 13px; } }
   @media screen and (min-width: 1000px) {
     .howtouse__stepNumber {
       position: relative;
@@ -531,6 +561,11 @@ body {
     .restaurants__heading {
       margin-left: 2vw;
       margin-bottom: 2vw; } }
+  @media screen and (min-width: 1500px) {
+    .restaurants__heading {
+      font-size: 2em;
+      margin-left: 40px;
+      margin-bottom: 40px; } }
 @media screen and (min-width: 1000px) {
   .restaurants__display {
     display: grid;
@@ -554,6 +589,10 @@ body {
     .restaurants img {
       height: 22vw;
       width: 47.5vw; } }
+  @media screen and (min-width: 1500px) {
+    .restaurants img {
+      height: 20.60em;
+      width: 44.5em; } }
 
 .cards {
   text-decoration: none;
@@ -569,6 +608,9 @@ body {
     align-items: center; }
   .cards__caption {
     padding: 1vh 2vw 1.5vh; }
+    @media screen and (min-width: 1500px) {
+      .cards__caption {
+        font-size: 1.2em; } }
     @media screen and (min-width: 1000px) {
       .cards__caption {
         padding: 0.5vh 1vw 1vh; } }
@@ -588,12 +630,22 @@ body {
         margin-top: 1.2vw;
         margin-left: 38%;
         padding: 0.7vh 1vw; } }
+    @media screen and (min-width: 1500px) {
+      .cards__tag {
+        font-size: 24px;
+        /* margin-left: 23.75em; */
+        margin-left: 570px;
+        margin-top: 18px;
+        padding: 8.4px 15.12px; } }
 
 .headerAllPages__arrow {
   position: absolute;
   left: 9vw;
   margin-top: -0.5em;
   color: black; }
+  @media screen and (min-width: 1000px) {
+    .headerAllPages__arrow {
+      font-size: 2em; } }
 
 .menu__pic {
   max-height: 40vw;
@@ -602,6 +654,9 @@ body {
   @media screen and (max-width: 550px) {
     .menu__pic {
       max-height: 55vw; } }
+  @media screen and (min-width: 1500px) {
+    .menu__pic {
+      max-height: 37.5em; } }
 .menu__container {
   padding: 4vh 5vw;
   background: #f4f4f4;
@@ -625,6 +680,10 @@ body {
   @media screen and (min-width: 1400px) {
     .menu__heading {
       padding: 0vh 8vw 0vh 8vw; } }
+  @media screen and (min-width: 1500px) {
+    .menu__heading {
+      padding: 0vh 120px 0vh 120px;
+      font-size: 4.25em; } }
 @media screen and (min-width: 1400px) {
   .menu__btn {
     margin-right: 17vw; } }
@@ -633,6 +692,10 @@ body {
   .dishes {
     width: 30vw;
     padding: 0vh 1vw 0vh 1vw; } }
+@media screen and (min-width: 1500px) {
+  .dishes {
+    width: 28em;
+    padding: 0px 15px 0 15px; } }
 .dishes__container {
   background: white;
   margin: 3vh 0vw;
@@ -692,5 +755,8 @@ body {
     .order {
       position: relative;
       right: 32.5vw; } }
+  @media screen and (min-width: 1500px) {
+    .order {
+      right: 29.75em; } }
 
 /*# sourceMappingURL=style.css.map */

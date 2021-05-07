@@ -11,6 +11,9 @@
     align-items: center;
     height: 10vh;
     width: 100%; 
+    @media screen and (min-width: 1500px) {
+        height: 120px;
+    }
     &__logo {
         height: 4.5vh;
     }

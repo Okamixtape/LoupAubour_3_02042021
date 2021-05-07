@@ -10,6 +10,9 @@
         left: 9vw;
         margin-top: -0.5em;
         color: black;
+        @media screen and (min-width: 1000px) {
+            font-size: 2em;
+        }
     }
 }
 
@@ -20,6 +23,9 @@
         object-fit: cover;
         @media screen and (max-width: 550px) {
             max-height: 55vw;
+        }
+        @media screen and (min-width: 1500px) {
+            max-height: 37.5em;
         }
     }
     &__container {
@@ -46,6 +52,10 @@
         @media screen and (min-width: 1400px) {
             padding: 0vh 8vw 0vh 8vw;
         }
+        @media screen and (min-width: 1500px) {
+            padding: 0vh 120px 0vh 120px;
+            font-size: 4.25em;
+        }
     }
     &__btn {
         @media screen and (min-width: 1400px) {
@@ -58,6 +68,10 @@
     @media screen and (min-width: 1400px) {
         width: 30vw;
         padding: 0vh 1vw 0vh 1vw;
+    }
+    @media screen and (min-width: 1500px) {
+        width: 28em;
+        padding: 0px 15px 0 15px;
     }
     &__container {
         background: white;
@@ -105,5 +119,8 @@
     @media screen and (min-width: 1400px) {
         position: relative;
         right: 32.5vw;
+    }
+    @media screen and (min-width: 1500px) {
+        right: 29.75em;
     }
 }
