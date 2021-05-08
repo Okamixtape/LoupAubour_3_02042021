@@ -22,7 +22,6 @@
   padding: 0; }
 
 body {
-  max-width: 1500px;
   justify-content: center; }
 
 /* --- GLOBAL --- */
@@ -114,6 +113,9 @@ body {
 .dishes__container .checkicon {
   font-weight: 800;
   font-size: 22px; }
+  @media screen and (min-width: 3000px) {
+    .dishes__container .checkicon {
+      font-size: 33px; } }
 .dishes__bottomDescription {
   font-weight: 100; }
 .dishes__bottomPrice {
@@ -190,6 +192,16 @@ body {
   @media screen and (min-width: 1000px) {
     .cards__emptyheartbtn {
       top: 0.85em; } }
+  @media screen and (min-width: 1500px) {
+    .cards__emptyheartbtn {
+      top: 1.2em;
+      right: -0.2em;
+      font-size: 3em; } }
+  @media screen and (min-width: 6000px) {
+    .cards__emptyheartbtn {
+      top: 1.2em;
+      right: 0.4em;
+      font-size: 6em; } }
 .cards__fullheartbtn {
   opacity: 0;
   position: relative;
@@ -204,6 +216,17 @@ body {
   @media screen and (min-width: 1000px) {
     .cards__fullheartbtn {
       top: 0.85em; } }
+  @media screen and (min-width: 1500px) {
+    .cards__fullheartbtn {
+      top: 1.2em;
+      right: 0.89em;
+      font-size: 3em; } }
+  @media screen and (min-width: 6000px) {
+    .cards__fullheartbtn {
+      top: 1.2em;
+      right: 1.44em;
+      font-size: 6em;
+      -webkit-text-stroke-width: 10px; } }
   .cards__fullheartbtn:hover {
     transition: 400ms;
     opacity: 1;
@@ -259,6 +282,12 @@ body {
     position: relative;
     bottom: 0.2em;
     right: 0.1em; }
+    @media screen and (min-width: 1700px) {
+      .dishes__container .checkicon {
+        bottom: -0.1em; } }
+    @media screen and (min-width: 3000px) {
+      .dishes__container .checkicon {
+        right: 0.2em; } }
   .dishes__container:hover .checkicon {
     transform: rotate(-1turn);
     transition: 0.8s;
@@ -268,9 +297,12 @@ body {
     position: relative;
     left: 1.2em;
     bottom: 2.5em;
-    padding: 33px 20px 21px 20px;
+    padding: 33px 20px 30px 20px;
     background-color: #99E2D0;
     transition: transform 0.5s ease-in-out; }
+    @media screen and (min-width: 3000px) {
+      .dishes__container .dishes__bottomCheckbox {
+        padding: 50px 11px 70px 20px; } }
   .dishes__container:hover .dishes__bottomCheckbox {
     transform: translateX(0px); }
   .dishes__container:hover .dishes__name {
@@ -297,7 +329,7 @@ body {
       right: 2em; } }
   @media screen and (min-width: 1400px) {
     .menu__emptyheartbtn {
-      right: 6.5em; } }
+      right: 26vw; } }
   .menu__emptyheartbtn:hover {
     opacity: 0; }
 .menu__fullheartbtn {
@@ -316,7 +348,7 @@ body {
       right: 2em; } }
   @media screen and (min-width: 1400px) {
     .menu__fullheartbtn {
-      right: 6.5em; } }
+      right: 26vw; } }
   .menu__fullheartbtn:hover {
     transition: 400ms;
     opacity: 1;
@@ -332,9 +364,21 @@ body {
   /* Searchbar not displayed on menu page*/ }
   @media screen and (min-width: 1500px) {
     .headerAllPages {
-      height: 120px; } }
+      height: 7vw; } }
+  @media screen and (min-width: 4000px) {
+    .headerAllPages {
+      height: 11em; } }
+  @media screen and (min-width: 7500px) {
+    .headerAllPages {
+      height: 14em; } }
   .headerAllPages__logo {
     height: 4.5vh; }
+    @media screen and (min-width: 4000px) {
+      .headerAllPages__logo {
+        height: 6em; } }
+    @media screen and (min-width: 7500px) {
+      .headerAllPages__logo {
+        height: 9em; } }
   .headerAllPages__location {
     background: #eaeaea;
     display: flex;
@@ -344,6 +388,10 @@ body {
     padding-top: 0.4em;
     padding-bottom: 0.3em;
     box-shadow: inset 0px 5px 5px 0px #cbcaca; }
+    @media screen and (min-width: 1500px) {
+      .headerAllPages__location {
+        font-size: 1.8vw;
+        height: 4vw; } }
     .headerAllPages__location input {
       margin-left: 1.4em;
       height: 1.3em;
@@ -352,6 +400,9 @@ body {
       border-radius: 13px;
       border: none;
       outline: none; }
+      @media screen and (min-width: 2800px) {
+        .headerAllPages__location input {
+          border-radius: 1em; } }
       .headerAllPages__location input::placeholder {
         color: black; }
   .headerAllPages__menulocation {
@@ -367,7 +418,11 @@ body {
       text-align: center; } }
   @media screen and (min-width: 1500px) {
     .footer {
+      font-size: 2em;
       padding: 45px; } }
+  @media screen and (min-width: 6000px) {
+    .footer {
+      font-size: 4em; } }
   .footer__logo {
     filter: invert(1);
     height: 1.3em; }
@@ -406,7 +461,13 @@ body {
   padding: 2em 1em; }
   @media screen and (min-width: 1500px) {
     .reservez {
-      font-size: 1.5em; } }
+      font-size: 2em; } }
+  @media screen and (min-width: 6000px) {
+    .reservez {
+      font-size: 4em; } }
+  @media screen and (min-width: 7500px) {
+    .reservez {
+      font-size: 6em; } }
   .reservez__heading {
     padding: 2vw; }
     @media screen and (min-width: 1500px) {
@@ -443,6 +504,9 @@ body {
   @media screen and (min-width: 1500px) {
     .howtouse__container {
       padding: 60px 0 45px 0; } }
+  @media screen and (min-width: 7500px) {
+    .howtouse__container {
+      font-size: 1.5em; } }
 .howtouse__heading {
   padding-bottom: 2vh;
   padding-left: 5vw; }
@@ -451,7 +515,10 @@ body {
       padding-left: 2vw; } }
   @media screen and (min-width: 1500px) {
     .howtouse__heading {
-      font-size: 2em; } }
+      font-size: 3em; } }
+  @media screen and (min-width: 6000px) {
+    .howtouse__heading {
+      font-size: 5em; } }
 .howtouse__allsteps {
   list-style-type: none;
   padding: 0vh 100px; }
@@ -469,6 +536,9 @@ body {
   @media screen and (min-width: 1500px) {
     .howtouse__allsteps {
       padding: 0vh 70px; } }
+  @media screen and (min-width: 6000px) {
+    .howtouse__allsteps {
+      font-size: 1.4em; } }
 .howtouse__step {
   background: #f4f4f4;
   margin: 3vh 1vw;
@@ -485,6 +555,15 @@ body {
   @media screen and (min-width: 1500px) {
     .howtouse__step {
       font-size: 1.5em; } }
+  @media screen and (min-width: 2300px) {
+    .howtouse__step {
+      font-size: 2em;
+      padding: 3vh 2vw 3vh 3.3vw; } }
+  @media screen and (min-width: 2800px) {
+    .howtouse__step {
+      font-size: 3em;
+      padding: 3vh 2vw 3vh 3.3vw;
+      border-radius: 1em; } }
   .howtouse__step:hover {
     background-color: #e4d5f6;
     box-shadow: 0px 5px 10px 2px #a6a3a3; }
@@ -499,18 +578,30 @@ body {
   color: #f8f5f5;
   font-size: 1.3em;
   padding: 3.6px 10px 3.2px 10px; }
-  @media screen and (min-width: 1500px) {
-    .howtouse__stepNumber {
-      padding: 3.6px 13px 3.2px 13px; } }
-  @media screen and (min-width: 1000px) {
-    .howtouse__stepNumber {
-      position: relative;
-      left: -4.3vw; } }
   @media screen and (max-width: 580px) {
     .howtouse__stepNumber {
       font-size: 1em;
       padding: 3.6px 8px 3.2px 8px;
       left: 14px; } }
+  @media screen and (min-width: 1000px) {
+    .howtouse__stepNumber {
+      position: relative;
+      left: -4.3vw; } }
+  @media screen and (min-width: 1500px) {
+    .howtouse__stepNumber {
+      padding: 3.6px 13px 3.2px 13px; } }
+  @media screen and (min-width: 2300px) {
+    .howtouse__stepNumber {
+      padding: 3.6px 16px 3.2px 16px; } }
+  @media screen and (min-width: 2800px) {
+    .howtouse__stepNumber {
+      padding: 3.6px 23px 3.2px 23px; } }
+  @media screen and (min-width: 6000px) {
+    .howtouse__stepNumber {
+      padding: 3.6px 30px 4.2px 30px; } }
+  @media screen and (min-width: 7500px) {
+    .howtouse__stepNumber {
+      padding: 3.6px 42px 4.2px 42px; } }
 .howtouse__mobileicon {
   position: absolute;
   left: 25vw;
@@ -563,9 +654,14 @@ body {
       margin-bottom: 2vw; } }
   @media screen and (min-width: 1500px) {
     .restaurants__heading {
-      font-size: 2em;
-      margin-left: 40px;
+      font-size: 3em;
       margin-bottom: 40px; } }
+  @media screen and (min-width: 6000px) {
+    .restaurants__heading {
+      font-size: 5em; } }
+  @media screen and (min-width: 7500px) {
+    .restaurants__heading {
+      font-size: 8em; } }
 @media screen and (min-width: 1000px) {
   .restaurants__display {
     display: grid;
@@ -589,10 +685,14 @@ body {
     .restaurants img {
       height: 22vw;
       width: 47.5vw; } }
-  @media screen and (min-width: 1500px) {
+  @media screen and (min-width: 2300px) {
     .restaurants img {
-      height: 20.60em;
-      width: 44.5em; } }
+      height: 20vw;
+      width: 45vw; } }
+  @media screen and (min-width: 6000px) {
+    .restaurants img {
+      height: 17vw;
+      width: 38vw; } }
 
 .cards {
   text-decoration: none;
@@ -610,10 +710,13 @@ body {
     padding: 1vh 2vw 1.5vh; }
     @media screen and (min-width: 1500px) {
       .cards__caption {
-        font-size: 1.2em; } }
+        font-size: 2em; } }
     @media screen and (min-width: 1000px) {
       .cards__caption {
         padding: 0.5vh 1vw 1vh; } }
+    @media screen and (min-width: 6000px) {
+      .cards__caption {
+        font-size: 5em; } }
   .cards__heading {
     padding-bottom: 1vh; }
   .cards__tag {
@@ -630,13 +733,13 @@ body {
         margin-top: 1.2vw;
         margin-left: 38%;
         padding: 0.7vh 1vw; } }
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: 2300px) {
       .cards__tag {
-        font-size: 24px;
-        /* margin-left: 23.75em; */
-        margin-left: 570px;
-        margin-top: 18px;
-        padding: 8.4px 15.12px; } }
+        margin-left: 35%;
+        border-radius: 15px; } }
+    @media screen and (min-width: 6000px) {
+      .cards__tag {
+        margin-left: 28%; } }
 
 .headerAllPages__arrow {
   position: absolute;
@@ -657,6 +760,9 @@ body {
   @media screen and (min-width: 1500px) {
     .menu__pic {
       max-height: 37.5em; } }
+  @media screen and (min-width: 2400px) {
+    .menu__pic {
+      max-height: 22vw; } }
 .menu__container {
   padding: 4vh 5vw;
   background: #f4f4f4;
@@ -673,6 +779,16 @@ body {
       /* justify-content: space-around; */
       justify-content: center;
       padding: 4vh 1vw; } }
+  @media screen and (min-width: 2700px) {
+    .menu__container {
+      padding: 3em 4vw 23em 4vw; } }
+  @media screen and (min-width: 3000px) {
+    .menu__container {
+      font-size: 1.4em;
+      padding: 3em 4vw 13em 4vw; } }
+  @media screen and (min-width: 4000px) {
+    .menu__container {
+      padding: 3em 4vw 7em 4vw; } }
 .menu__heading {
   display: flex;
   align-items: center;
@@ -680,10 +796,13 @@ body {
   @media screen and (min-width: 1400px) {
     .menu__heading {
       padding: 0vh 8vw 0vh 8vw; } }
-  @media screen and (min-width: 1500px) {
+  @media screen and (min-width: 2400px) {
     .menu__heading {
-      padding: 0vh 120px 0vh 120px;
-      font-size: 4.25em; } }
+      font-size: 5.2em;
+      padding: 0vh 20vw 0vh 20vw; } }
+  @media screen and (min-width: 2700px) {
+    .menu__heading {
+      padding: 0vh 21vw 0vh 21vw; } }
 @media screen and (min-width: 1400px) {
   .menu__btn {
     margin-right: 17vw; } }
@@ -692,10 +811,9 @@ body {
   .dishes {
     width: 30vw;
     padding: 0vh 1vw 0vh 1vw; } }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1700px) {
   .dishes {
-    width: 28em;
-    padding: 0px 15px 0 15px; } }
+    font-size: 1.2em; } }
 .dishes__container {
   background: white;
   margin: 3vh 0vw;
@@ -755,8 +873,13 @@ body {
     .order {
       position: relative;
       right: 32.5vw; } }
-  @media screen and (min-width: 1500px) {
+  @media screen and (min-width: 2700px) {
     .order {
-      right: 29.75em; } }
+      position: absolute;
+      right: 10vw; } }
+  @media screen and (min-width: 3000px) {
+    .order {
+      position: unset;
+      justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */

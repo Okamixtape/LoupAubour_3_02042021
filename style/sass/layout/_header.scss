@@ -12,10 +12,22 @@
     height: 10vh;
     width: 100%; 
     @media screen and (min-width: 1500px) {
-        height: 120px;
+        height: 7vw;
+    }
+    @media screen and (min-width: 4000px) {
+        height: 11em
+    }
+    @media screen and (min-width: 7500px) {
+        height: 14em;
     }
     &__logo {
         height: 4.5vh;
+        @media screen and (min-width: 4000px) {
+            height: 6em;
+        }
+        @media screen and (min-width: 7500px) {
+            height: 9em;
+        }
     }
     &__location {
         background: darken($color-bg, 4%);
@@ -26,6 +38,10 @@
         padding-top: 0.4em;
         padding-bottom: 0.3em;
         box-shadow: inset 0px 5px 5px 0px darken($color-bs, 5%);
+        @media screen and (min-width: 1500px) {
+            font-size: 1.8vw;
+            height: 4vw;
+        }
         input {
             margin-left: 1.4em;
             height: 1.3em;
@@ -34,6 +50,9 @@
             border-radius: 13px;
             border: none;
             outline: none;
+            @media screen and (min-width: 2800px) {
+                border-radius: 1em;
+            }
             &::placeholder {
                 color:black;
             }

@@ -13,7 +13,11 @@
         text-align: center;
     }
     @media screen and (min-width: 1500px) {
+        font-size: 2em;
         padding: 45px;
+    }
+    @media screen and (min-width: 6000px) {
+        font-size: 4em;
     }
     &__logo {
         filter: invert(1);
