@@ -50,4 +50,4 @@ Chaque carte de restaurant doit être cliquable dans son intégralité et l'util
 ## Coordonnées :
 
 Vous pouvez me contacter directement en m'envoyant un [email](mailto:loup.aubour@gmail.com)
-ou si vous voulez en savoir plus consultes mon [profil LinkedIn](https://www.linkedin.com/in/loup-aubour-front-end-dev/)
+ou si vous voulez en savoir plus consultez mon [profil LinkedIn](https://www.linkedin.com/in/loup-aubour-front-end-dev/) !
